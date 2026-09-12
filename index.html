@@ -1,0 +1,1792 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aprovação PM-MG — Soldado (CFSd)</title>
+<meta name="description" content="Cursinho completo para Soldado da PM-MG (CFSd): edital verticalizado com pegadinhas, aulas do zero, plano de estudos com horas por dia, simulados que corrigem sozinho e flashcards. Português, Literatura, Inglês, Noções de Direito e Direitos Humanos e Raciocínio Lógico-Matemático.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Public+Sans:wght@400;500;600;700;800&display=swap">
+<style>
+  /* ===== Tema: água/saneamento (DMAE). Azul institucional + verde "tratada".
+     Claro por padrão; escuro via prefers-color-scheme e [data-theme]. ===== */
+  :root{
+    --bg:#eef3f6; --paper:#ffffff; --paper-2:#f4f8fa;
+    --ink:#122430; --ink-2:#3a5361; --muted:#647d8b; --line:#d7e2e8; --line-2:#e6eef2;
+    --blue:#0d5c86; --blue-2:#1785bf; --blue-soft:#e2f0f8;
+    --teal:#0e8f9c; --green:#1a8f4c; --green-soft:#e3f5ea;
+    --amber:#b45309; --amber-soft:#fbeede; --red:#c0392b; --red-soft:#fbe7e4;
+    --shadow:0 1px 2px rgba(18,36,48,.06),0 8px 24px rgba(18,36,48,.06);
+    --wrongbg:#fbe7e4; --rightbg:#e3f5ea;
+  }
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+    --bg:#0b1418; --paper:#0f1b21; --paper-2:#132430;
+    --ink:#e7eef2; --ink-2:#b3c4cd; --muted:#8399a4; --line:#22343d; --line-2:#1a2a32;
+    --blue:#3ea6dd; --blue-2:#57b6e8; --blue-soft:#12303f;
+    --teal:#2bb6c2; --green:#43c07e; --green-soft:#123026;
+    --amber:#e0a45c; --amber-soft:#2e2410; --red:#e8796c; --red-soft:#2e1613;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);
+    --wrongbg:#2e1613; --rightbg:#123026;
+  }}
+  :root[data-theme="dark"]{
+    --bg:#0b1418; --paper:#0f1b21; --paper-2:#132430;
+    --ink:#e7eef2; --ink-2:#b3c4cd; --muted:#8399a4; --line:#22343d; --line-2:#1a2a32;
+    --blue:#3ea6dd; --blue-2:#57b6e8; --blue-soft:#12303f;
+    --teal:#2bb6c2; --green:#43c07e; --green-soft:#123026;
+    --amber:#e0a45c; --amber-soft:#2e2410; --red:#e8796c; --red-soft:#2e1613;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);
+    --wrongbg:#2e1613; --rightbg:#123026;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:70px;overflow-x:clip}
+  body{overflow-x:clip}
+  img,table,pre,.tw{max-width:100%}
+  /* impede que textos longos (URLs, código) estourem a largura no celular */
+  p,li,td,th,dd,dt,h1,h2,h3,h4,span,a,b,strong,em,label{overflow-wrap:break-word}
+  code{white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-word}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Public Sans",system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,h4{font-family:"Lora",Georgia,serif;line-height:1.2;text-wrap:balance}
+  a{color:var(--blue)}
+  .serif{font-family:"Lora",Georgia,serif}
+
+  /* topbar */
+  .top{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .top .in{max-width:1180px;margin:0 auto;display:flex;align-items:center;gap:12px;padding:10px 18px}
+  .brand{display:flex;align-items:center;gap:9px;font-weight:800;letter-spacing:.01em}
+  .brand .drop{width:26px;height:26px;border-radius:50% 50% 50% 8px;transform:rotate(45deg);background:linear-gradient(135deg,var(--blue-2),var(--teal));box-shadow:inset 0 0 0 2px rgba(255,255,255,.25)}
+  .brand b{color:var(--blue)}
+  .top .sp{flex:1}
+  .cd{font-size:12.5px;color:var(--ink-2);font-weight:600;border:1px solid var(--line);border-radius:999px;padding:5px 11px;white-space:nowrap}
+  .cd b{color:var(--red);font-variant-numeric:tabular-nums}
+  .tbtn{border:1px solid var(--line);background:var(--paper);color:var(--ink-2);border-radius:9px;padding:6px 9px;cursor:pointer;font-size:14px}
+  .menub{display:none}
+
+  .wrap{max-width:1180px;margin:0 auto;padding:0 18px;display:grid;grid-template-columns:236px 1fr;gap:30px;align-items:start}
+  /* TOC */
+  nav.toc{position:sticky;top:64px;align-self:start;max-height:calc(100vh - 80px);overflow:auto;padding:18px 0 40px;font-size:14px}
+  nav.toc a{display:block;color:var(--ink-2);text-decoration:none;padding:6px 10px;border-radius:7px;border-left:2px solid transparent}
+  nav.toc a:hover{background:var(--paper-2);color:var(--ink)}
+  nav.toc a.on{color:var(--blue);border-left-color:var(--blue);background:var(--blue-soft);font-weight:600}
+  nav.toc .grp{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:16px 10px 4px;font-weight:700}
+  main{min-width:0;padding-bottom:80px}
+
+  section{scroll-margin-top:70px;margin:34px 0}
+  .card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:22px 24px;box-shadow:var(--shadow)}
+  .eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin:0 0 6px}
+  h2.sec{font-size:clamp(22px,3.2vw,30px);margin:0 0 14px;color:var(--ink);border-bottom:2px solid var(--blue);padding-bottom:8px;display:inline-block}
+  h3{font-size:19px;margin:22px 0 8px;color:var(--blue)}
+  h4{font-size:15.5px;margin:16px 0 6px}
+  p{margin:0 0 12px;max-width:72ch}
+  ul,ol{margin:0 0 12px;padding-left:22px}
+  li{margin:5px 0;max-width:72ch}
+  strong{color:var(--ink)}
+  .lead{font-size:17px;color:var(--ink-2)}
+  code{background:var(--paper-2);border:1px solid var(--line-2);border-radius:5px;padding:1px 5px;font-size:.9em}
+
+  /* hero */
+  .hero{position:relative;overflow:hidden;border-radius:20px;border:1px solid var(--line);background:
+     radial-gradient(120% 90% at 88% -10%, color-mix(in srgb,var(--blue-2) 24%, transparent), transparent 60%),
+     linear-gradient(180deg,var(--paper),var(--paper-2));padding:34px 28px;margin-top:22px}
+  .hero h1{font-size:clamp(28px,5vw,46px);margin:8px 0 6px;letter-spacing:-.01em}
+  .hero h1 em{font-style:normal;color:var(--blue)}
+  .hero .sub{font-size:17px;color:var(--ink-2);max-width:60ch}
+  .facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+  .fact{background:var(--paper);border:1px solid var(--line);border-radius:11px;padding:9px 13px;font-size:13.5px}
+  .fact b{display:block;font-size:16px;color:var(--blue);font-family:"Lora",serif}
+
+  /* alert */
+  .alert{border-radius:14px;padding:14px 16px;margin:14px 0;border:1px solid;font-size:14.5px}
+  .alert b{font-weight:800}
+  .alert.red{background:var(--red-soft);border-color:color-mix(in srgb,var(--red) 40%,var(--line))}
+  .alert.amber{background:var(--amber-soft);border-color:color-mix(in srgb,var(--amber) 40%,var(--line))}
+  .alert.blue{background:var(--blue-soft);border-color:color-mix(in srgb,var(--blue) 30%,var(--line))}
+  .alert .tag{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+  .alert.red .tag{color:var(--red)} .alert.amber .tag{color:var(--amber)} .alert.blue .tag{color:var(--blue)}
+
+  /* tables */
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:12px 0}
+  table{width:100%;border-collapse:collapse;font-size:14px;min-width:520px}
+  th,td{text-align:left;vertical-align:top;padding:9px 12px;border-bottom:1px solid var(--line-2)}
+  th{background:var(--paper-2);color:var(--blue);font-weight:700;position:sticky;top:0}
+  tbody tr:last-child td{border-bottom:0}
+  td.k{font-weight:600;color:var(--ink);white-space:nowrap}
+  .pri{font-weight:800;font-size:11px;padding:2px 7px;border-radius:6px}
+  .p1{background:var(--red-soft);color:var(--red)} .p2{background:var(--amber-soft);color:var(--amber)} .p3{background:var(--paper-2);color:var(--muted)}
+  .peg{color:var(--amber)}
+
+  /* weight bars */
+  .weights{display:grid;gap:9px;margin:10px 0}
+  .wrow{display:grid;grid-template-columns:200px 1fr 54px;gap:12px;align-items:center;font-size:14px}
+  .bar{height:14px;background:var(--paper-2);border-radius:999px;overflow:hidden;border:1px solid var(--line-2)}
+  .bar>i{display:block;height:100%;background:linear-gradient(90deg,var(--blue-2),var(--teal));border-radius:999px}
+  @media(max-width:560px){.wrow{grid-template-columns:1fr;gap:3px}.wrow .bar{grid-row:2}}
+
+  /* simulado */
+  .q{border:1px solid var(--line);border-radius:13px;padding:16px 18px;margin:14px 0;background:var(--paper)}
+  .q .qn{font-weight:700;color:var(--blue);font-size:13px;letter-spacing:.02em}
+  .q .qt{margin:4px 0 12px;font-weight:500}
+  .opt{display:flex;gap:10px;align-items:flex-start;padding:9px 12px;border:1px solid var(--line);border-radius:10px;margin:6px 0;cursor:pointer;transition:background .12s,border-color .12s}
+  .opt:hover{background:var(--paper-2)}
+  .opt input{margin-top:3px}
+  .opt .lt{font-weight:700;color:var(--ink-2)}
+  .opt.right{background:var(--rightbg);border-color:var(--green)}
+  .opt.wrong{background:var(--wrongbg);border-color:var(--red)}
+  .expl{display:none;margin-top:10px;border-left:3px solid var(--blue);background:var(--paper-2);padding:9px 13px;border-radius:0 8px 8px 0;font-size:14px}
+  .expl.show{display:block}
+  .expl b.ok{color:var(--green)} .expl b.no{color:var(--red)}
+  .passage{background:var(--paper-2);border:1px solid var(--line-2);border-left:3px solid var(--teal);border-radius:0 10px 10px 0;padding:12px 16px;margin:10px 0;font-style:italic}
+  .simbar{position:sticky;bottom:0;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(6px);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-top:16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;box-shadow:var(--shadow)}
+  .btn{background:var(--blue);color:#fff;border:0;border-radius:10px;padding:11px 20px;font-weight:700;font-size:15px;cursor:pointer;font-family:inherit}
+  .btn:hover{background:var(--blue-2)}
+  .btn.ghost{background:transparent;color:var(--blue);border:1px solid var(--line)}
+  .score{font-weight:800;font-size:16px}
+  .score b{font-family:"Lora",serif;font-size:20px}
+  .blocklabel{font-family:"Lora",serif;font-size:17px;color:var(--teal);margin:22px 0 4px;font-weight:700}
+
+  /* flashcards */
+  .fctools{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:8px 0 14px}
+  .fc{border:1px solid var(--line);border-radius:13px;padding:16px 18px;background:var(--paper);cursor:pointer;min-height:96px;display:flex;flex-direction:column;justify-content:center;box-shadow:var(--shadow)}
+  .fc .fq{font-weight:600}
+  .fc .fn{font-size:12px;color:var(--muted);font-weight:700}
+  .fc .fa{display:none;margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);color:var(--ink-2)}
+  .fc.open .fa{display:block}
+  .fc .hint{font-size:12px;color:var(--muted);margin-top:6px}
+  .fc.open .hint{display:none}
+
+  /* aula (ensino antes do treino) */
+  .aula{background:var(--blue-soft);border:1px solid color-mix(in srgb,var(--blue) 25%,var(--line));border-radius:12px;padding:14px 16px;margin:6px 0 14px;font-size:14.5px;line-height:1.65}
+  .aula b{color:var(--ink)}
+  .matfilter{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 4px}
+  .matfilter button{border:1px solid var(--line);background:var(--paper);color:var(--ink-2);border-radius:999px;padding:6px 13px;cursor:pointer;font:inherit;font-size:13.5px}
+  .matfilter button.on{background:var(--blue);color:#fff;border-color:var(--blue)}
+  .matdiv{font-family:"Lora",serif;color:var(--teal);font-size:20px;margin:28px 2px 2px;padding-top:14px;border-top:2px solid var(--line)}
+  /* central de estudos (hub) */
+  .hubgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:14px 0}
+  @media(max-width:640px){.hubgrid{grid-template-columns:1fr}}
+  .hubc{display:block;border:1px solid var(--line);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--ink);background:var(--paper-2);transition:border-color .12s,transform .12s}
+  .hubc:hover{border-color:var(--blue);transform:translateY(-1px)}
+  .hubc .hn{display:inline-flex;width:24px;height:24px;align-items:center;justify-content:center;background:var(--blue);color:#fff;border-radius:50%;font-weight:800;font-size:13px;margin-bottom:6px;font-family:"Public Sans",sans-serif}
+  .hubc b{display:block;color:var(--blue);margin:2px 0 4px}
+  .hubc .d{font-size:13.5px;color:var(--ink-2)}
+  /* plano checklist */
+  .chk{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-bottom:1px solid var(--line-2)}
+  .chk input{margin-top:5px;width:16px;height:16px;accent-color:var(--green);flex:0 0 auto}
+  .chk label{cursor:pointer}
+  .chk.done label{color:var(--muted);text-decoration:line-through}
+  h4.wk{margin:22px 0 4px;color:var(--blue);font-size:.98rem;border-bottom:2px solid var(--line-2);padding-bottom:5px}
+  .callout{background:var(--paper-2);border:1px solid var(--line-2);border-left:4px solid var(--green);border-radius:12px;padding:16px 20px}
+  /* domínio por prioridade */
+  .prband{display:flex;align-items:center;gap:12px;margin:30px 0 6px}
+  .prband .tag{font-weight:800;font-size:.85rem;color:#fff;padding:4px 12px;border-radius:20px;letter-spacing:.03em}
+  .prband.p1 .tag{background:var(--p1,#c0392b)} .prband.p2 .tag{background:var(--p2,#d68910)} .prband.p3 .tag{background:var(--p3,#5d6d7e)}
+  .prband h3{margin:0;font-size:1.05rem;color:var(--ink)}
+  .prband .cnt{margin-left:auto;font-size:.82rem;color:var(--muted)}
+  .domgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+  @media(max-width:760px){.domgrid{grid-template-columns:1fr}}
+  .domc{background:var(--paper-2);border:1px solid var(--line-2);border-radius:12px;padding:14px 16px}
+  .domc h4{margin:0 0 7px;color:var(--blue);font-size:1rem;display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+  .domc h4 .mt{font-size:.72rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
+  .domc p{margin:0 0 8px;font-size:.93rem;line-height:1.5}
+  .domc .na{margin:0;font-size:.9rem;background:var(--paper);border-left:3px solid var(--green);border-radius:0 8px 8px 0;padding:8px 11px}
+  .domc .na b{color:var(--green)}
+  .domc .ap{margin:0 0 8px;font-size:.92rem;line-height:1.55;background:var(--blue-soft);border-left:3px solid var(--blue);border-radius:0 8px 8px 0;padding:8px 11px}
+  .domc .ap b{color:var(--blue)}
+  /* painel Revise seus erros */
+  .errpanel{margin-top:16px;background:var(--paper-2);border:1px solid var(--line-2);border-left:4px solid var(--p1,#c0392b);border-radius:12px;padding:14px 18px}
+  .errpanel h4{margin:0 0 6px;color:var(--p1,#c0392b);font-size:1.05rem}
+  .errpanel>p{margin:0 0 6px;font-size:.93rem}
+  .errpanel ol{margin:8px 0 0;padding-left:22px}
+  .errpanel li{margin-bottom:13px;line-height:1.5}
+  .errpanel .eq{font-style:italic;color:var(--ink-2);margin:3px 0}
+  .errpanel .ei{background:var(--paper);border-radius:8px;padding:7px 11px;margin-top:4px;font-size:.92rem}
+  .errpanel .you{color:var(--p1,#c0392b)} .errpanel .ok{color:var(--green)}
+  .errpanel .tip{font-size:.86rem;color:var(--muted);margin:10px 0 0}
+  .errpanel a{font-weight:700;color:var(--blue)}
+  .errpanel.zero{border-left-color:var(--green)} .errpanel.zero h4{color:var(--green)}
+  /* cronômetro */
+  .timer{display:inline-flex;align-items:center;gap:8px;margin-left:auto}
+  .timer .tdisp{font-variant-numeric:tabular-nums;font-size:15px;color:var(--ink-2);white-space:nowrap;font-family:"Lora",serif}
+  .timer .tdisp.low{color:var(--red)}
+  .timer .tbtn2{padding:8px 12px;font-size:13px}
+  /* meu desempenho */
+  .desempenho .dhint{font-size:14px;color:var(--ink-2);margin:0}
+  .desempenho .dbest{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:2px 0 10px}
+  .desempenho .dlbl{font-weight:700;color:var(--ink)}
+  .desempenho .dchip{background:var(--green-soft);color:var(--ink);border:1px solid color-mix(in srgb,var(--green) 30%,var(--line));border-radius:999px;padding:4px 11px;font-size:13px}
+  .desempenho .dlast{margin:0 0 10px;padding-left:20px;font-size:14px}
+  .desempenho .dlast li{margin:3px 0}
+  .desempenho .dclear{padding:7px 12px;font-size:13px}
+  /* próxima ação (recomendação personalizada) */
+  .proxima{background:var(--green-soft);border:1px solid color-mix(in srgb,var(--green) 30%,var(--line));border-left:4px solid var(--green);border-radius:12px;padding:14px 16px;margin:2px 0 14px}
+  .proxima h4{margin:0 0 4px;color:var(--green);font-size:1rem}
+  .proxima p{margin:0 0 10px;font-size:.95rem;max-width:none}
+  .proxima .btn{padding:9px 16px;font-size:14px;text-decoration:none;display:inline-block}
+  .proxima .foco{font-size:13px;color:var(--ink-2);margin:8px 0 0}
+  .proxima[hidden]{display:none!important}
+  /* caderno de erros */
+  .dhint{font-size:14px;color:var(--ink-2)}
+  .cadtools{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 6px}
+  .cadtools .btn{padding:8px 13px;font-size:13.5px}
+  .cadcount{font-family:"Public Sans",sans-serif;font-size:14px;color:var(--muted);font-weight:700}
+  /* progresso do cronograma */
+  .cprog{margin:8px 0 14px}
+  .cprow{display:grid;grid-template-columns:200px 1fr auto;gap:12px;align-items:center;font-size:13.5px}
+  .cbar{height:13px;background:var(--paper-2);border:1px solid var(--line-2);border-radius:999px;overflow:hidden}
+  .cbar>i{display:block;height:100%;background:linear-gradient(90deg,var(--green),var(--teal));border-radius:999px;transition:width .3s}
+  @media(max-width:560px){.cprog .cprow{grid-template-columns:1fr;gap:3px}.cprog .cbar{grid-row:2}}
+  @media(max-width:560px){
+    .timer{margin-left:0;width:100%;justify-content:space-between;order:3}
+    .q .qt{font-size:15.5px} .opt{padding:11px 13px}
+    .card{padding:18px 15px}
+  }
+
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:720px){.grid2{grid-template-columns:1fr}}
+  .mini{background:var(--paper-2);border:1px solid var(--line-2);border-radius:11px;padding:14px 16px}
+  .mini h4{margin-top:0;color:var(--blue)}
+  footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px;padding:24px 0;text-align:center}
+  .back{position:fixed;right:16px;bottom:16px;z-index:40;background:var(--blue);color:#fff;border:0;border-radius:50%;width:44px;height:44px;font-size:18px;cursor:pointer;box-shadow:var(--shadow);display:none}
+  .back.show{display:block}
+  /* login / perfis */
+  .authwall{position:fixed;inset:0;z-index:100;background:var(--bg);display:flex;align-items:flex-start;justify-content:center;padding:24px 18px;overflow-y:auto;-webkit-overflow-scrolling:touch}
+  .authcard{background:var(--paper);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:26px 24px;max-width:390px;width:100%;margin:auto}
+  :root.authlock,:root.authlock body{overflow:hidden;height:100%}
+  .authwall[hidden]{display:none!important}
+  .authbrand{display:flex;align-items:center;gap:9px;font-weight:800;font-size:18px;font-family:"Lora",serif}
+  .authbrand b{color:var(--blue)}
+  .authbrand .drop{width:24px;height:24px;border-radius:50% 50% 50% 8px;transform:rotate(45deg);background:linear-gradient(135deg,var(--blue-2),var(--teal))}
+  .authsub{font-size:14px;color:var(--ink-2);margin:8px 0 16px}
+  .authcard input{width:100%;padding:11px 13px;margin:0 0 10px;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:16px;background:var(--paper);color:var(--ink)}
+  .authcard input:focus{outline:2px solid var(--blue-2);border-color:var(--blue-2)}
+  .pwwrap{position:relative;margin:0 0 10px}
+  .pwwrap input{margin:0!important;padding-right:82px}
+  .pwtoggle{position:absolute;right:6px;top:50%;transform:translateY(-50%);background:none;border:0;color:var(--blue);font:inherit;font-size:13px;font-weight:600;cursor:pointer;padding:6px 8px}
+  .authcard .btn{width:100%;margin-top:2px}
+  .authtoggle{font-size:13.5px;color:var(--ink-2);text-align:center;margin:12px 0 0}
+  .authmsg{background:var(--red-soft);color:var(--red);border-radius:8px;padding:8px 11px;font-size:13.5px;margin-bottom:10px}
+  .authnote{font-size:11.5px;color:var(--muted);margin:16px 0 0;line-height:1.5}
+  .userbox{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--ink-2)}
+  .userbox[hidden]{display:none!important}
+  .userbox #whoami{font-weight:700;color:var(--ink);max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  @media(max-width:560px){.userbox #whoami{max-width:80px}}
+
+  @media(max-width:900px){
+    .wrap{grid-template-columns:1fr;gap:0}
+    nav.toc{position:fixed;inset:54px 0 0 0;z-index:45;background:var(--paper);max-height:none;overflow-y:auto;padding:14px 18px;display:none;border-right:1px solid var(--line)}
+    nav.toc.open{display:block}
+    .menub{display:inline-block}
+    .cd{display:none}
+    /* sem desfoque (evita "tremer" ao rolar) e barra de Corrigir no fluxo (não flutua) */
+    .top{backdrop-filter:none;background:var(--paper)}
+    .simbar{position:static;backdrop-filter:none;background:var(--paper)}
+    .top .in{padding:9px 14px;gap:8px}
+    .brand{font-size:15px}
+    body.navopen{overflow:hidden}
+  }
+  @media print{
+    .top,nav.toc,.simbar,.back,.fctools,.menub,.authwall,.userbox{display:none!important}
+    html.authlock,html.authlock body{overflow:visible!important;height:auto!important}
+    .wrap{display:block;max-width:none;padding:0}
+    body{background:#fff}
+    .card,.q,.fc,.hero{box-shadow:none;break-inside:avoid}
+    .expl{display:block!important}
+    .fc .fa{display:block!important} .fc .hint{display:none}
+    a{color:inherit;text-decoration:none}
+    section{margin:16px 0}
+  }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.116.0/dist/umd/supabase.js"></script>
+<script>
+  window.DMAE_SLUG="pmmg"; /* identifica ESTE concurso no backend compartilhado */
+  try{ window.sb = window.supabase.createClient(
+    "https://eruszwjnekrvfbtylbuv.supabase.co",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVydXN6d2puZWtydmZidHlsYnV2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODkxOTM3MTksImV4cCI6MjEwNDc2OTcxOX0.XfxqmgTu9OLI6moAk6XhasQc9RmgI9w-lpbzbHSJqqo",
+    {auth:{persistSession:true,autoRefreshToken:true}}
+  ); }catch(e){ window.sb=null; }
+</script>
+</head>
+<body>
+<div id="authwall" class="authwall">
+  <div class="authcard">
+    <div class="authbrand"><span class="drop" aria-hidden="true"></span> Aprovação <b>PM-MG</b></div>
+    <p class="authsub">Cada pessoa tem a <strong>sua conta e o seu progresso</strong>, separados. Coloque seu e-mail e uma senha: se já tiver conta, você <strong>entra</strong>; se não tiver, ela é <strong>criada na hora</strong>.</p>
+    <div id="auth-msg" class="authmsg" hidden></div>
+    <input id="au-name" type="text" placeholder="Seu nome (opcional)" autocomplete="name">
+    <input id="au-email" type="email" placeholder="Seu e-mail" autocomplete="username" inputmode="email" autocapitalize="none" autocorrect="off" spellcheck="false">
+    <div class="pwwrap">
+      <input id="au-pass" type="password" placeholder="Sua senha (mín. 4 caracteres)" autocomplete="current-password" autocapitalize="none" autocorrect="off" spellcheck="false">
+      <button type="button" class="pwtoggle" id="au-eye" aria-label="Mostrar senha">Mostrar</button>
+    </div>
+    <button class="btn" id="au-btn" type="button">Entrar / Criar minha conta</button>
+    <p class="authnote">Sua conta funciona em <strong>qualquer aparelho</strong> (celular e computador): o progresso fica salvo <strong>na nuvem</strong> e é privado — ninguém vê o que você errou ou acertou. Use uma senha só para este site (não repita a do banco/e-mail).</p>
+  </div>
+</div>
+<script>
+/* ===== Autenticação Supabase (contas reais, sincroniza entre aparelhos) ===== */
+window.DMAE_KEY=function(k){var u="";try{u=localStorage.getItem("dmae:uid")||"";}catch(e){}return "dmae:u:"+u+":"+k;};
+window.DMAE_logout=function(){var done=function(){try{localStorage.removeItem("dmae:uid");}catch(e){}location.reload();};if(window.sb){window.sb.auth.signOut().then(done,done);}else{done();}};
+(function(){
+  var wall=document.getElementById("authwall");
+  function show(){if(wall){wall.hidden=false;wall.style.display="";}document.documentElement.classList.add("authlock");}
+  function hide(){if(wall){wall.hidden=true;wall.style.display="none";}document.documentElement.classList.remove("authlock");}
+  function msg(t){var m=document.getElementById("auth-msg");if(m){m.textContent=t;m.hidden=!t;}}
+  function busy(b){var x=document.getElementById("au-btn");if(x){x.disabled=b;x.textContent=b?"Entrando…":"Entrar / Criar minha conta";}}
+  show();
+  if(!window.sb){msg("Não consegui conectar ao servidor de contas. Confira sua internet e recarregue a página.");return;}
+  function onLogin(session){
+    try{localStorage.setItem("dmae:uid",session.user.id);}catch(e){}
+    var md=session.user.user_metadata||{};
+    var nome=md.name||md.nome||session.user.email;
+    var who=document.getElementById("whoami"),box=document.getElementById("userbox");
+    if(who)who.textContent=nome; if(box)box.hidden=false;
+    var lo=document.getElementById("logout"); if(lo)lo.onclick=window.DMAE_logout;
+    hide();
+    if(window.DMAE_syncPull)window.DMAE_syncPull();
+  }
+  async function go(){
+    var n=(document.getElementById("au-name").value||"").trim();
+    var e=(document.getElementById("au-email").value||"").trim().toLowerCase();
+    var pw=document.getElementById("au-pass").value||"";
+    if(!e||e.indexOf("@")<0){msg("Digite um e-mail válido.");return;}
+    if(pw.length<4){msg("A senha precisa ter pelo menos 4 caracteres.");return;}
+    msg("");busy(true);
+    try{
+      var r=await window.sb.auth.signInWithPassword({email:e,password:pw});
+      if(r.data&&r.data.session){onLogin(r.data.session);return;}
+      var su=await window.sb.auth.signUp({email:e,password:pw,options:{data:{name:(n||e.split("@")[0])}}});
+      if(su.error){
+        var t=(su.error.message||"").toLowerCase();
+        if(t.indexOf("already")>=0||t.indexOf("registered")>=0){msg("Essa conta já existe, mas a senha não confere. Tente a senha correta.");}
+        else{msg("Não foi possível entrar: "+su.error.message);}
+        busy(false);return;
+      }
+      if(su.data&&su.data.session){onLogin(su.data.session);return;}
+      msg("Conta criada — confirme pelo link no seu e-mail para entrar.");busy(false);
+    }catch(err){msg("Erro de conexão. Tente novamente.");busy(false);}
+  }
+  var b=document.getElementById("au-btn"); if(b)b.onclick=go;
+  ["au-email","au-pass","au-name"].forEach(function(id){var el=document.getElementById(id);if(el)el.addEventListener("keydown",function(ev){if(ev.key==="Enter")go();});});
+  var eye=document.getElementById("au-eye"),pwf=document.getElementById("au-pass");
+  if(eye&&pwf)eye.onclick=function(){var s=pwf.type==="password";pwf.type=s?"text":"password";eye.textContent=s?"Ocultar":"Mostrar";pwf.focus();};
+  window.sb.auth.getSession().then(function(r){if(r.data&&r.data.session)onLogin(r.data.session);});
+})();
+</script>
+<header class="top">
+  <div class="in">
+    <button class="tbtn menub" id="menub" aria-label="Menu">☰</button>
+    <span class="brand"><span class="drop" aria-hidden="true"></span> Aprovação <b>PM-MG</b></span>
+    <span class="sp"></span>
+    <span class="cd" id="cd">Próximo concurso · <b id="cddays">—</b></span>
+    <span class="userbox" id="userbox" hidden><span id="whoami"></span><button class="tbtn" id="logout" type="button">Sair</button></span>
+    <button class="tbtn" id="theme" aria-label="Alternar tema">◐</button>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="toc" id="toc" aria-label="Índice">
+    <div class="grp">Comece aqui</div>
+    <a href="#inicio">Início</a>
+    <a href="#hub">Central de estudos</a>
+    <a href="#plano">Plano de estudos</a>
+    <a href="#memoria">Como fixar na memória</a>
+    <div class="grp">1 · Aprender + treinar</div>
+    <a href="#dominio">Domínio por prioridade</a>
+    <a href="#treinos-sec">Aulas + treinos por tema</a>
+    <div class="grp">2 · Praticar</div>
+    <a href="#antes-sim">Antes de cada simulado</a>
+    <a href="#simulado">Simulado 1</a>
+    <a href="#simulado2">Simulado 2</a>
+    <a href="#simulado3">Simulado 3</a>
+    <a href="#simulado4">Simulado 4</a>
+    <a href="#aleatorio">Simulado aleatório</a>
+    <a href="#especifico">Só Português</a>
+    <div class="grp">3 · Revisar</div>
+    <a href="#caderno">Caderno de erros</a>
+    <a href="#flashcards">Flashcards</a>
+    <a href="#vespera">Revisão de véspera</a>
+    <div class="grp">4 · Consultar</div>
+    <a href="#ficha">Ficha do edital</a>
+    <a href="#portugues">O que estudar (verticalizado)</a>
+    <a href="#mudou">Sobre o edital</a>
+    <a href="#correcoes">Correções</a>
+    <a href="#perfil">Perfil da banca</a>
+    <a href="#fontes">Fontes oficiais</a>
+    <a href="#claude">Tutor no Claude Code</a>
+  </nav>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section id="inicio" class="hero">
+      <p class="eyebrow">Concurso Soldado PM-MG · Curso de Formação de Soldados (CFSd)</p>
+      <h1>Seu cursinho completo para <em>Soldado da Polícia Militar de Minas Gerais</em></h1>
+      <p class="sub">Do zero ao dia da prova: edital verticalizado com as pegadinhas, aulas que ensinam passo a passo, simulados que corrigem sozinho, caderno de erros e plano de estudos com horas por dia. Baseado no último edital (CFSd 2025), com a maior carga em <b>Língua Portuguesa</b> e <b>Raciocínio Lógico-Matemático</b>.</p>
+      <div class="facts">
+        <div class="fact"><b>50</b> questões · 100 pts</div>
+        <div class="fact"><b>Múltipla escolha</b> (1 correta)</div>
+        <div class="fact"><b>Ensino Médio</b> completo</div>
+        <div class="fact"><b>Foco</b> Português · RLM · Direito/DH</div>
+        <div class="fact"><b>TAF</b> (AFM) eliminatório</div>
+      </div>
+      <a class="btn" href="#hub" style="margin-top:20px;display:inline-block;text-decoration:none">Começar a estudar agora →</a>
+</section>
+
+    <div class="alert red" style="margin-top:16px">
+      <span class="tag">Onde estão os pontos</span> — a prova tem <b>50 questões de igual valor (2 pts cada)</b>. A <b>Língua Portuguesa</b> é, de longe, a matéria com mais questões, seguida do <b>Raciocínio Lógico-Matemático</b>. Domine essas duas e você já garante a maior parte da nota. Como cada questão vale igual, <b>não deixe nada em branco</b>.
+    </div>
+    <div class="alert amber">
+      <span class="tag">Datas</span> — O edital do próximo concurso <b>ainda não saiu</b> (a banca está em definição). Este cursinho foi montado pelo <b>último edital (CFSd 2025)</b> e será ajustado quando o novo sair. Comece já o <b>preparo físico</b>: a avaliação física militar (AFM/TAF) é eliminatória.
+    </div>
+
+    <!-- ============ CENTRAL DE ESTUDOS (HUB) ============ -->
+    <section id="hub">
+      <div class="card">
+        <p class="eyebrow">Central de estudos</p>
+        <h2 class="sec">Por onde começar</h2>
+        <div id="proxima" class="proxima"></div>
+        <p>Siga a trilha na ordem — do aprender ao revisar. Está tudo aqui dentro: você não precisa pesquisar fora.</p>
+        <div class="hubgrid">
+          <a class="hubc" href="#dominio"><span class="hn">1</span><b>Aprender + treinar</b><span class="d">Domínio por prioridade (P1/P2/P3) e aulas por tema, cada uma ensinando do zero: Aprenda → Entenda → Na prova. Comece pela Língua Portuguesa.</span></a>
+          <a class="hubc" href="#simulado"><span class="hn">2</span><b>Praticar</b><span class="d">Quatro simulados que corrigem sozinho (com cronômetro) e o painel “Revise seus erros”, no formato da prova.</span></a>
+          <a class="hubc" href="#flashcards"><span class="hn">3</span><b>Revisar</b><span class="d">Flashcards + plano de estudos com horas por dia (progresso salvo na sua conta) — e não esqueça do treino físico para a AFM.</span></a>
+          <a class="hubc" href="#ficha"><span class="hn">4</span><b>Consultar</b><span class="d">Ficha do edital, o que estudar (verticalizado), fontes oficiais e o tutor infinito no Claude Code.</span></a>
+        </div>
+        <div class="alert blue"><span class="tag">Prioridade</span> — a <b>Língua Portuguesa</b> tem o maior número de questões, então é a matéria nº 1. Depois vêm o <b>Raciocínio Lógico-Matemático</b> e as <b>Noções de Direito e Direitos Humanos</b>. Literatura (dois livros) e Inglês são pontos "fáceis" de garantir. Ataque primeiro os temas marcados <b>P1</b>.</div>
+        <h3 style="margin:18px 0 8px">Meu desempenho</h3>
+        <div id="desempenho" class="desempenho"></div>
+      </div>
+    </section>
+
+    <!-- ============ 1. FICHA ============ -->
+    <section id="ficha">
+      <div class="card">
+        <p class="eyebrow">Seção 1</p>
+        <h2 class="sec">Ficha técnica do concurso</h2>
+        <div class="tw"><table>
+          <tbody>
+          <tr><td class="k">Órgão</td><td>Polícia Militar de Minas Gerais (PMMG) — Curso de Formação de Soldados (CFSd), Quadro de Praças (QPPM). Seleção conduzida pelo Centro de Recrutamento e Seleção (CRS).</td></tr>
+          <tr><td class="k">Cargo</td><td><strong>Soldado de 1ª Classe da PMMG</strong> — exige <strong>Ensino Médio completo</strong> (além dos requisitos de idade, altura, CNH e aptidão física/saúde do edital).</td></tr>
+          <tr><td class="k">Banca</td><td>Nos últimos concursos, a própria PMMG/CRS. Para o próximo, a banca está em <strong>definição</strong> — este material será ajustado quando o edital sair.</td></tr>
+          <tr><td class="k">Prova objetiva</td><td><strong>50 questões</strong> de múltipla escolha (uma correta), <strong>2 pontos cada = 100 pontos</strong>.</td></tr>
+          <tr><td class="k">Disciplinas</td><td>Língua Portuguesa e Interpretação de Textos · Literatura · Noções de Língua Inglesa · Noções de Direito e Direitos Humanos · Raciocínio Lógico-Matemático.</td></tr>
+          <tr><td class="k">Fases</td><td>Prova de conhecimentos (objetiva) · avaliação psicológica · exames de saúde · <strong>Avaliação Física Militar (AFM/TAF)</strong>, eliminatória · investigação social/idoneidade. Depois, o Curso de Formação de Soldados.</td></tr>
+          <tr><td class="k">Aprovação</td><td>A prova objetiva é <strong>eliminatória e classificatória</strong>; costuma-se exigir um aproveitamento mínimo (confira o percentual no edital do próximo concurso). Meta segura: <strong>acertar o máximo possível, sem deixar questões em branco</strong>.</td></tr>
+          <tr><td class="k">Literatura (obras)</td><td>No último edital, dois livros: <strong>“Campo Geral”</strong> (Guimarães Rosa) e <strong>“Vidas Secas”</strong> (Graciliano Ramos). Leia as obras e resumos comentados.</td></tr>
+          </tbody>
+        </table></div>
+
+        <h3 id="dist">1.1 As 50 questões e o peso</h3>
+        <div class="weights">
+          <div class="wrow"><span>Língua Portuguesa e Interpretação</span><span class="bar"><i style="width:100%"></i></span><span>a maior carga</span></div>
+          <div class="wrow"><span>Raciocínio Lógico-Matemático</span><span class="bar"><i style="width:70%"></i></span><span>peso alto</span></div>
+          <div class="wrow"><span>Noções de Direito e Direitos Humanos</span><span class="bar"><i style="width:50%"></i></span><span>cai sempre</span></div>
+          <div class="wrow"><span>Literatura (2 obras) + Inglês</span><span class="bar"><i style="width:35%"></i></span><span>pontos "fáceis"</span></div>
+        </div>
+        <p class="peg"><strong>Estratégia:</strong> como todas as questões valem igual (2 pts), invista onde há mais questões — <strong>Português e RLM</strong> decidem a prova. Direito/DH é decoreba de Constituição (rende rápido). Literatura e Inglês são pontos garantidos com pouca preparação.</p>
+
+        <h3 id="regras">1.2 As demais fases</h3>
+        <ul>
+          <li><strong>AFM/TAF (avaliação física):</strong> eliminatória — corrida, flexões/barra, abdominais etc. <strong>Comece a treinar desde já.</strong></li>
+          <li><strong>Avaliação psicológica, exames de saúde e investigação social:</strong> mantenha documentação, saúde e conduta em dia.</li>
+          <li><strong>Curso de Formação de Soldados:</strong> etapa final, com aulas e avaliações.</li>
+        </ul>
+      </div>
+</section>
+
+    <!-- ============ 2. MUDOU ============ -->
+    <section id="mudou">
+      <div class="card">
+        <p class="eyebrow">Seção 2</p>
+        <h2 class="sec">O que você precisa saber sobre o próximo edital</h2>
+        <p>O próximo edital ainda não saiu (o último CFSd foi em 2025). O que dá para prever pelo histórico:</p>
+        <ul>
+          <li>Prova de <strong>múltipla escolha</strong> (uma correta), com forte carga de <strong>Língua Portuguesa</strong> e <strong>Raciocínio Lógico-Matemático</strong>.</li>
+          <li>As disciplinas tendem a se manter: Português/Interpretação, Literatura, Inglês, Noções de Direito e Direitos Humanos e RLM.</li>
+          <li>Podem mudar: <strong>banca, número de vagas e as obras de Literatura</strong>. Assim que o edital sair, confirme a lista de livros e o conteúdo.</li>
+          <li>A <strong>Avaliação Física Militar</strong> é eliminatória — treine o corpo em paralelo ao estudo.</li>
+        </ul>
+        <p class="peg">Estude pelo <strong>edital de 2025</strong> agora; quando o novo sair, ajustamos os detalhes (principalmente Literatura).</p>
+      </div>
+</section>
+
+    <!-- ============ 3. CORREÇÕES ============ -->
+    <section id="correcoes">
+      <div class="card">
+        <p class="eyebrow">Seção 3</p>
+        <h2 class="sec">Erros comuns de quem estuda por material genérico</h2>
+        <div class="tw"><table>
+          <thead><tr><th>O material genérico diz</th><th>O que o edital PM-MG (CFSd 2025) diz</th></tr></thead>
+          <tbody>
+          <tr><td>Cai "Matemática" comum</td><td>É <strong>Raciocínio Lógico-Matemático</strong>: lógica de argumentação, proposições, tabelas-verdade, estatística, funções, probabilidade e problemas</td></tr>
+          <tr><td>Literatura é genérica</td><td>São <strong>obras específicas</strong> (no último edital: “Campo Geral” e “Vidas Secas”) — leia os livros</td></tr>
+          <tr><td>Direito é só Constitucional</td><td>Inclui a <strong>CF</strong> (com Militares dos Estados e Segurança Pública), a <strong>LINDB</strong> (Lei 4.657/42), a <strong>DUDH</strong> e a <strong>Convenção Americana de Direitos Humanos</strong></td></tr>
+          <tr><td>Só a prova conta</td><td>Há <strong>AFM/TAF eliminatória</strong>, exames e investigação social — prepare o físico e a documentação desde já</td></tr>
+          </tbody>
+        </table></div>
+        <p class="peg">Permanece correto: como não há desconto por erro, <strong>nunca deixe questão em branco</strong>; eliminando 2 alternativas, o chute vira 50%.</p>
+      </div>
+</section>
+
+    <!-- ============ 4. PERFIL ============ -->
+    <section id="perfil">
+      <div class="card">
+        <p class="eyebrow">Seção 4</p>
+        <h2 class="sec">Como a prova cobra (perfil)</h2>
+        <ul>
+          <li><strong>Múltipla escolha, uma correta.</strong> Comandos: "assinale a INCORRETA", "EXCETO", "assinale a alternativa correta".</li>
+          <li><strong>Língua Portuguesa:</strong> muita <strong>interpretação de texto</strong> + gramática (classes, sintaxe, regência, concordância, crase, pontuação, colocação, coesão) e semântica/figuras de linguagem.</li>
+          <li><strong>RLM:</strong> lógica de argumentação (proposições, tabelas-verdade, De Morgan, silogismos) + estatística, funções, probabilidade e problemas.</li>
+          <li><strong>Direito/DH:</strong> cobrança <strong>literal</strong> da Constituição (direitos e garantias, militares dos estados, segurança pública), LINDB e tratados de Direitos Humanos.</li>
+          <li><strong>Literatura:</strong> enredo, personagens e temas das obras indicadas.</li>
+          <li><strong>Inglês:</strong> interpretação de texto (não precisa "falar", precisa entender).</li>
+        </ul>
+      </div>
+</section>
+
+    <!-- ============ 5. VERTICALIZADO ============ -->
+    <section>
+      <p class="eyebrow" style="margin-left:2px">Seção 5 · Edital verticalizado (por disciplina)</p>
+      <h2 class="sec" style="margin-left:2px">O que estudar em cada item — com a pegadinha</h2>
+      <p style="margin-left:2px">Prioridade: <span class="pri p1">P1</span> cai com certeza e pesa · <span class="pri p2">P2</span> cai com frequência · <span class="pri p3">P3</span> cai pouco. <em style="color:var(--muted)">(projetado pelo último edital — CFSd 2025)</em></p>
+      <div class="alert blue" style="margin-left:2px">
+        <span class="tag">Como definimos as prioridades — pelo último edital, não achismo</span>
+        <p style="margin:6px 0 4px">O edital do próximo concurso ainda não saiu. As marcações P1/P2/P3 seguem o <b>último edital (CFSd 2025)</b>:</p>
+        <ul style="margin:0">
+          <li><b>Estrutura:</b> <b>50 questões</b> de múltipla escolha, 2 pts cada (100 pts), em 5 disciplinas: Língua Portuguesa e Interpretação, Literatura, Noções de Língua Inglesa, Noções de Direito e Direitos Humanos e Raciocínio Lógico-Matemático.</li>
+          <li><b>O que mais pesa:</b> <b>Língua Portuguesa</b> tem a maior carga de questões, seguida do <b>Raciocínio Lógico-Matemático</b> — são as prioridades nº 1. Depois, <b>Noções de Direito e Direitos Humanos</b>.</li>
+          <li><b>Pontos "fáceis":</b> <b>Literatura</b> (obras definidas) e <b>Inglês</b> (interpretação) rendem com pouca preparação — não os despreze.</li>
+        </ul>
+        <p class="peg" style="margin:8px 0 0;font-size:13px">Fontes: edital do CFSd PM-MG 2025 e provas anteriores. Quando o novo edital sair, tudo será reajustado (em especial as obras de Literatura).</p>
+      </div>
+    </section>
+
+    <section id="portugues"><div class="card">
+      <h3 style="margin-top:0">5.1 Língua Portuguesa e Interpretação <span style="color:var(--muted);font-family:Public Sans;font-size:14px">(a disciplina com MAIS questões — prioridade nº 1)</span></h3>
+      <div class="tw"><table>
+        <thead><tr><th>Item</th><th>Pri.</th><th>O que dominar</th><th>Pegadinha</th></tr></thead>
+        <tbody>
+        <tr><td class="k">Interpretação</td><td><span class="pri p1">P1</span></td><td>Compreensão (o que diz) × inferência (o que se conclui) × extrapolação. Ideia central × secundária.</td><td class="peg">Alternativa "verdadeira no mundo real" mas ausente do texto; generalizar ("sempre", "todos") o que o texto restringe.</td></tr>
+        <tr><td class="k">Tipos e gêneros</td><td><span class="pri p2">P2</span></td><td>Tipos: narrativo, descritivo, dissertativo-argumentativo, expositivo, injuntivo. Gêneros: crônica, notícia, editorial, charge, ofício…</td><td class="peg">Confundir tipo (estrutura) com gênero (função social).</td></tr>
+        <tr><td class="k">Sentido figurado</td><td><span class="pri p2">P2</span></td><td>Denotação × conotação; metáfora, metonímia, hipérbole, eufemismo, ironia, antítese, paradoxo.</td><td class="peg">Metonímia (parte pelo todo) confundida com metáfora.</td></tr>
+        <tr><td class="k">Coesão/coerência</td><td><span class="pri p1">P1</span></td><td>Anáfora (retoma) × catáfora (antecipa), elipse, conectivos; coerência = sem contradição.</td><td class="peg">"A que se refere o pronome?" — localize o antecedente exato.</td></tr>
+        <tr><td class="k">Concordância</td><td><span class="pri p1">P1</span></td><td>"Haver"(existir) e "fazer"(tempo) impessoais → singular ("Houve/Faz dois anos"). "Existir" concorda. "Vendem-se casas" × "Precisa-se de".</td><td class="peg">"Houveram" e "fazem dois anos" (errados).</td></tr>
+        <tr><td class="k">Crase</td><td><span class="pri p1">P1</span></td><td>a+artigo; a+aquele; locuções femininas (às vezes, à noite, à medida que). Teste: troca por masculino → "ao" = crase.</td><td class="peg">Cidade sem artigo ("vou a Belo Horizonte"); antes de verbo/masculino/plural com "a".</td></tr>
+        <tr><td class="k">Formação de palavras</td><td><span class="pri p2">P2</span></td><td>Derivação (prefixal, sufixal, parassintética, regressiva, imprópria) × composição (justaposição, aglutinação).</td><td class="peg">Parassíntese × prefixal-e-sufixal: "infelizmente" não é parassíntese ("infeliz" existe); "entardecer" é.</td></tr>
+        <tr><td class="k">Colocação pronominal</td><td><span class="pri p2">P2</span></td><td>Próclise com atrativas (não, que, advérbios); ênclise no início e imperativo; mesóclise no futuro sem atrativo.</td><td class="peg">"Me avisaram", "nunca esqueça-se", "que inscreveu-se" (todos errados).</td></tr>
+        <tr><td class="k">Sin/ant/polissemia</td><td><span class="pri p2">P2</span></td><td>Polissemia (um vocábulo, vários sentidos) × homonímia; sinônimo no contexto.</td><td class="peg">Sinônimo correto no dicionário mas errado no contexto.</td></tr>
+        <tr><td class="k">Acentuação (Novo Acordo)</td><td><span class="pri p2">P2</span></td><td>Sem trema; sem acento em "ei/oi" de paroxítona (ideia, heroico, assembleia); "voo/creem" sem acento; mantém "pôde/pôr". Hífen.</td><td class="peg">Grafia antiga (idéia, vôo, pára) posta como "correta".</td></tr>
+        <tr><td class="k">Pontuação</td><td><span class="pri p1">P1</span></td><td>Vírgula nunca separa sujeito do verbo; obrigatória em aposto, vocativo, adverbial anteposta, adjetiva explicativa.</td><td class="peg">Explicativa × restritiva muda o sentido ("Os servidores, que…" = todos; sem vírgula = só alguns).</td></tr>
+        <tr><td class="k">Morfossintaxe</td><td><span class="pri p1">P1</span></td><td>10 classes; funções (sujeito, objeto, predicativo, adjunto, aposto). Adjunto adnominal × complemento nominal.</td><td class="peg">"Que" pronome relativo × conjunção integrante.</td></tr>
+        <tr><td class="k">Tempos/modos verbais</td><td><span class="pri p2">P2</span></td><td>Indicativo/subjuntivo/imperativo; correlação "Se tivesse… teria", "Quando chegar… avisarei".</td><td class="peg">Verbos irregulares: "se ele vir" × "se ele vier"; pôr, ter, haver.</td></tr>
+        <tr><td class="k">Sintaxe do período</td><td><span class="pri p1">P1</span></td><td>Coordenadas (aditiva, adversativa, conclusiva, explicativa) e subordinadas (substantivas, adjetivas, adverbiais).</td><td class="peg">"Embora/ainda que" = concessão; "pois" antes do verbo = explicação, depois = conclusão.</td></tr>
+        <tr><td class="k">Variação linguística</td><td><span class="pri p3">P3</span></td><td>Diatópica, diastrática, diafásica, diacrônica; norma-padrão × variedades.</td><td class="peg">Tratar variedade popular como "erro" → alternativa considerada incorreta.</td></tr>
+        </tbody>
+      </table></div>
+      <p class="peg"><strong>Estratégia:</strong> leia as perguntas antes do texto; marque conectivos e pronomes; nas reescritas, teste o sentido lógico (causa, oposição, concessão), não a "beleza".</p>
+    </div></section>
+
+    <section id="matematica"><div class="card">
+      <h3 style="margin-top:0">5.2 Raciocínio Lógico-Matemático <span style="color:var(--muted);font-family:Public Sans;font-size:14px">(2ª maior carga — lógica de argumentação + matemática aplicada)</span></h3>
+      <div class="tw"><table>
+        <thead><tr><th>Item</th><th>Pri.</th><th>Fórmulas / pontos-chave</th><th>Pegadinha</th></tr></thead>
+        <tbody>
+        <tr><td class="k">Conjuntos</td><td><span class="pri p2">P2</span></td><td>n(A∪B)=n(A)+n(B)−n(A∩B); Venn 2–3 conjuntos; N⊂Z⊂Q⊂R.</td><td class="peg">"Quantos não leem nenhum": monte o Venn pela interseção.</td></tr>
+        <tr><td class="k">Funções afim/quadrática</td><td><span class="pri p1">P1</span></td><td>Bhaskara; vértice xv=−b/2a, yv=−Δ/4a; a&gt;0 mínimo.</td><td class="peg">Pedem o valor mínimo (yv) e o candidato marca xv.</td></tr>
+        <tr><td class="k">Exponencial/log</td><td><span class="pri p2">P2</span></td><td>Igualar bases; log(a·b)=log a+log b; mudança de base.</td><td class="peg">Condição de existência: logaritmando&gt;0, base&gt;0 e ≠1.</td></tr>
+        <tr><td class="k">Trigonometria</td><td><span class="pri p3">P3</span></td><td>sen/cos/tg de 30/45/60; sen²+cos²=1; leis dos senos/cossenos.</td><td class="peg">Trocar seno por cosseno (qual cateto é o oposto?).</td></tr>
+        <tr><td class="k">PA/PG e financeira</td><td><span class="pri p1">P1</span></td><td>an=a1+(n−1)r; regra de três; aumentos sucessivos multiplicam (10%+20%=32%); J=C·i·t; M=C(1+i)ᵗ.</td><td class="peg">Pedem montante e você marca só o juro; juros simples onde é composto; n em vez de n−1.</td></tr>
+        <tr><td class="k">Combinatória/probab.</td><td><span class="pri p1">P1</span></td><td>Arranjo (ordem importa) × combinação; P=favoráveis/possíveis; "pelo menos um"=1−P(nenhum).</td><td class="peg">Senha/pódio = arranjo; comissão = combinação. Sem reposição muda o denominador.</td></tr>
+        <tr><td class="k">Geometria</td><td><span class="pri p2">P2</span></td><td>Áreas; volume cilindro=πr²h; 1 m³ = 1.000 L; distância entre pontos.</td><td class="peg">Esquecer de converter m³→litros ou cm→m; raio × diâmetro.</td></tr>
+        <tr><td class="k">Matrizes/sistemas</td><td><span class="pri p3">P3</span></td><td>Produto linha×coluna (A·B≠B·A); determinante 2×2 = ad−bc; Cramer.</td><td class="peg">Ordem do produto; sinal do determinante.</td></tr>
+        <tr><td class="k">Estatística</td><td><span class="pri p1">P1</span></td><td>Média, moda, mediana (ordenar!), variância, desvio padrão = √variância.</td><td class="peg">Mediana sem ordenar; confundir moda com média.</td></tr>
+        <tr><td class="k">Raciocínio lógico</td><td><span class="pri p1">P1</span></td><td>Conectivos (∧,∨,→,↔); ~(p∧q)=~p∨~q; ~(p→q)=p∧~q; contrapositiva p→q ≡ ~q→~p; casa dos pombos.</td><td class="peg">Negar "se p então q" com "se não p então não q" (errado); recíproca × contrapositiva.</td></tr>
+        </tbody>
+      </table></div>
+      <p class="peg"><strong>Estratégia:</strong> leia o comando final 2× (juros ou montante? litros ou m³?). Escreva a fórmula antes de calcular. Confira a unidade. Deixe as longas para o fim.</p>
+    </div></section>
+
+    <section id="gerais"><div class="card">
+      <h3 style="margin-top:0">5.3 Literatura e Língua Inglesa <span style="color:var(--muted);font-family:Public Sans;font-size:14px">(pontos "fáceis" de garantir)</span></h3>
+      <div class="grid2">
+        <div class="mini">
+          <h4>Literatura — as obras <span class="pri p2">P2</span></h4>
+          <ul>
+            <li>No último edital, <strong>duas obras</strong>: <strong>“Campo Geral”</strong> (Guimarães Rosa) e <strong>“Vidas Secas”</strong> (Graciliano Ramos). <em>Confirme a lista quando o novo edital sair.</em></li>
+            <li><strong>“Campo Geral”:</strong> novela de Guimarães Rosa; o menino <strong>Miguilim</strong> no sertão (Mutum); infância, sensibilidade, a descoberta do mundo (ele enxerga melhor ao ganhar óculos). Linguagem regional/inventiva.</li>
+            <li><strong>“Vidas Secas”:</strong> Graciliano Ramos; a família de <strong>Fabiano, sinhá Vitória</strong>, os dois filhos e a cadela <strong>Baleia</strong>, fugindo da seca no Nordeste. Temas: miséria, seca, desumanização, incomunicabilidade. Romance de 30 (2ª fase do Modernismo).</li>
+            <li class="peg">Pegadinha: trocar autores/personagens; confundir os temas das duas obras. Leia os livros e resumos comentados.</li>
+          </ul>
+        </div>
+        <div class="mini">
+          <h4>Noções de Língua Inglesa <span class="pri p3">P3</span></h4>
+          <ul>
+            <li><strong>Compreensão e interpretação de texto</strong> em inglês (você não precisa "falar", precisa entender a ideia central).</li>
+            <li><strong>Itens gramaticais</strong> para entender o sentido: tempos verbais, pronomes, conectivos, comparativos, cognatos.</li>
+            <li class="peg">Cuidado com os <strong>falsos cognatos</strong>: <i>actually</i> = na verdade (não "atualmente"); <i>pretend</i> = fingir; <i>library</i> = biblioteca.</li>
+          </ul>
+        </div>
+      </div>
+      <p class="peg"><strong>Método:</strong> Literatura e Inglês somam poucas questões, mas são <strong>previsíveis</strong> — leia as obras (ou bons resumos) e treine interpretação em inglês. É nota quase garantida com pouca hora de estudo.</p>
+    </div></section>
+
+    <section id="legislacao"><div class="card">
+      <h3 style="margin-top:0">5.4 Noções de Direito e Direitos Humanos <span style="color:var(--muted);font-family:Public Sans;font-size:14px">(cobrança literal — cai sempre)</span></h3>
+      <div class="tw"><table>
+        <thead><tr><th>Tema</th><th>Pri.</th><th>O que dominar</th><th>Pegadinha</th></tr></thead>
+        <tbody>
+        <tr><td class="k">CF — Princípios e direitos (Títs. I e II)</td><td><span class="pri p1">P1</span></td><td>Fundamentos da República (art. 1º) e objetivos (art. 3º); <strong>direitos e deveres individuais e coletivos (art. 5º)</strong>; direitos sociais.</td><td class="peg">Direito fundamental "absoluto" (nenhum é); anonimato é vedado; casa é inviolável com exceções.</td></tr>
+        <tr><td class="k">Nacionalidade e Direitos Políticos</td><td><span class="pri p2">P2</span></td><td>Brasileiro nato × naturalizado (cargos privativos de nato); alistamento e voto (obrigatório/facultativo); inelegibilidades.</td><td class="peg">Cargos privativos de brasileiro nato (ex.: Presidente, oficiais das Forças Armadas).</td></tr>
+        <tr><td class="k">Administração Pública (art. 37)</td><td><span class="pri p1">P1</span></td><td><strong>LIMPE</strong>; concurso público; acessibilidade a cargos.</td><td class="peg">Confundir os princípios; achar que servidor pode "tudo que a lei não proíbe".</td></tr>
+        <tr><td class="k">Militares dos Estados e Forças Armadas</td><td><span class="pri p1">P1</span></td><td>CF, Seção III do Cap. VII (militares dos Estados/DF); Cap. II (Forças Armadas); direitos e vedações dos militares.</td><td class="peg">Militar não tem alguns direitos do trabalhador comum; sindicalização e greve vedadas aos militares.</td></tr>
+        <tr><td class="k">Segurança Pública (art. 144)</td><td><span class="pri p1">P1</span></td><td>Órgãos de segurança pública; a <strong>Polícia Militar</strong> (polícia ostensiva e preservação da ordem pública); PM subordinada ao Governador.</td><td class="peg">Trocar as funções das polícias (PM = ostensiva/ordem; PC = judiciária).</td></tr>
+        <tr><td class="k">Tribunais e Juízes Militares/Estaduais</td><td><span class="pri p3">P3</span></td><td>Justiça Militar estadual; organização do Judiciário dos Estados.</td><td class="peg">Competência da Justiça Militar estadual.</td></tr>
+        <tr><td class="k">LINDB (Lei 4.657/1942)</td><td><span class="pri p2">P2</span></td><td>Vigência da lei ("vacatio legis"), obrigatoriedade, integração (analogia, costumes, princípios), irretroatividade, antinomias.</td><td class="peg">"Ninguém se escusa de cumprir a lei alegando que não a conhece."</td></tr>
+        <tr><td class="k">Direitos Humanos (DUDH e Pacto de San José)</td><td><span class="pri p1">P1</span></td><td><strong>Declaração Universal (1948)</strong>: dignidade, igualdade, universalidade. <strong>Convenção Americana (Pacto de San José, 1969)</strong>: direitos civis e a Corte Interamericana.</td><td class="peg">DH valem para todos e orientam a atuação policial (uso da força: legalidade, necessidade, proporcionalidade, moderação).</td></tr>
+        </tbody>
+      </table></div>
+    </div></section>
+
+    <section id="especificos"><div class="card">
+      <h2 class="sec">As demais fases (além da prova objetiva)</h2>
+      <ul>
+        <li><strong>Avaliação Física Militar (AFM/TAF):</strong> <strong>eliminatória</strong> — corrida, flexão de braço/barra, abdominais e outros testes definidos no edital. <strong>Comece a treinar desde já</strong>, em paralelo com o estudo: é comum passar na prova e cair no físico.</li>
+        <li><strong>Avaliação psicológica:</strong> testes que verificam o perfil para a atividade policial-militar (é eliminatória; não se "estuda", mas responda com sinceridade e coerência).</li>
+        <li><strong>Exames de saúde (biométrico/médico):</strong> altura mínima, acuidade visual, saúde geral — confira os requisitos no edital com antecedência.</li>
+        <li><strong>Investigação social:</strong> análise da vida pregressa e idoneidade — mantenha a conduta e a documentação em dia (certidões, antecedentes).</li>
+        <li><strong>Curso de Formação de Soldados (CFSd):</strong> etapa final, com disciplinas militares e avaliações.</li>
+      </ul>
+      <p class="peg">Foque a <strong>prova objetiva</strong> para passar, mas trate o <strong>TAF</strong> e a <strong>documentação</strong> como parte do concurso desde o primeiro dia.</p>
+    </div></section>
+
+    <!-- ============ 6. PLANO ============ -->
+    <section id="plano">
+      <p class="eyebrow">Seção 6</p>
+      <h2 class="sec">Plano de estudos — 8 semanas + reta final (com horas por dia)</h2>
+      <div class="alert amber"><span class="tag">Sem data ainda</span> — o edital do próximo concurso da PM-MG <b>ainda não saiu</b>. Este é um <b>ciclo de 8 semanas</b> para você começar HOJE pela Língua Portuguesa e pelo RLM (o que mais pesa) e chegar pronto — inclusive no <b>físico</b>, que é eliminatório. Quando o edital sair, encaixe o ciclo na data e confirme as obras de Literatura.</div>
+      <p>Ritmo: <strong>~2 h nos dias úteis</strong> (19h–21h) e <strong>simulado no sábado</strong>. E <strong>treino físico</strong> (corrida/força) em dias alternados — a AFM/TAF reprova quem deixa para a última hora.</p>
+
+      <h3>Ciclo semanal (horas por matéria — Português e RLM pesam mais)</h3>
+      <div class="tw"><table>
+        <thead><tr><th>Matéria</th><th>Horas/sem.</th><th>Por quê</th></tr></thead>
+        <tbody>
+        <tr><td class="k">Língua Portuguesa e Interpretação</td><td>6 h</td><td>A disciplina com <strong>mais questões</strong> — decide a prova.</td></tr>
+        <tr><td class="k">Raciocínio Lógico-Matemático</td><td>5 h</td><td>2ª maior carga; treino resolve.</td></tr>
+        <tr><td class="k">Noções de Direito e DH</td><td>3 h30</td><td>Cobrança literal da CF — rende rápido.</td></tr>
+        <tr><td class="k">Literatura + Inglês</td><td>2 h</td><td>Pontos “fáceis” de garantir.</td></tr>
+        <tr><td class="k">Simulado + correção</td><td>3 h</td><td>Todo sábado, cronometrado.</td></tr>
+        <tr><td class="k">Treino físico (AFM/TAF)</td><td>3–4 h</td><td>Eliminatório: comece cedo.</td></tr>
+        </tbody>
+      </table></div>
+
+      <h3>Rotina diária (para quem trabalha)</h3>
+      <div class="tw"><table>
+        <thead><tr><th>Quando</th><th>O quê</th><th>Tempo</th></tr></thead>
+        <tbody>
+        <tr><td class="k">Ao acordar</td><td>Flashcards do dia anterior (revisão espaçada)</td><td>20 min</td></tr>
+        <tr><td class="k">19h00 · bloco 1</td><td>Matéria mais difícil do dia (teoria + esquema)</td><td>50 min</td></tr>
+        <tr><td class="k">20h00 · bloco 2</td><td>Questões da mesma matéria (mín. 15) + caderno de erros</td><td>50 min</td></tr>
+        <tr><td class="k">21h00 · bloco 3</td><td>Lei seca (CF/LINDB) ou leitura de Literatura</td><td>40 min</td></tr>
+        <tr><td class="k">Dias alternados</td><td>Treino físico (corrida + força) para a AFM</td><td>40–60 min</td></tr>
+        </tbody>
+      </table></div>
+      <p class="peg">A matéria difícil vai no <strong>1º bloco</strong> (pico de atenção). <strong>Dormir 7–8 h vale mais que 1 h extra à meia-noite.</strong> Não separe estudo e treino físico — os dois fazem parte do concurso.</p>
+
+      <h3>Cronograma por fases (marque conforme avança — fica salvo na sua conta)</h3>
+      <div id="plano-list">
+        <div class="chk"><input type="checkbox" id="f0"><label for="f0"><b>Fase 0 — Preparação:</b> organize o material, faça o <a href="#simulado">simulado diagnóstico</a> e comece JÁ o treino físico para a AFM/TAF.</label></div>
+        <div class="chk"><input type="checkbox" id="f1"><label for="f1"><b>Fase 1 — Português (base):</b> interpretação, conectivos, ortografia/acentuação, classes de palavras e formação.</label></div>
+        <div class="chk"><input type="checkbox" id="f2"><label for="f2"><b>Fase 2 — Português (sintaxe):</b> termos da oração, período composto, regência, concordância, crase, pontuação e colocação.</label></div>
+        <div class="chk"><input type="checkbox" id="f3"><label for="f3"><b>Fase 3 — Raciocínio Lógico-Matemático:</b> lógica de argumentação (proposições, tabelas-verdade, De Morgan, silogismos) e estatística.</label></div>
+        <div class="chk"><input type="checkbox" id="f4"><label for="f4"><b>Fase 4 — Matemática aplicada:</b> porcentagem, razão/proporção, funções, probabilidade, conjuntos, sequências e métrica.</label></div>
+        <div class="chk"><input type="checkbox" id="f5"><label for="f5"><b>Fase 5 — Noções de Direito e DH:</b> CF (direitos, Administração, militares, segurança pública), LINDB, DUDH e Pacto de San José.</label></div>
+        <div class="chk"><input type="checkbox" id="f6"><label for="f6"><b>Fase 6 — Literatura e Inglês:</b> leia as obras (Campo Geral e Vidas Secas) e treine interpretação em inglês.</label></div>
+        <div class="chk"><input type="checkbox" id="f7"><label for="f7"><b>Fase 7 — Revisão + simulados:</b> refaça o caderno de erros; simulados completos cronometrados; mantenha o treino físico.</label></div>
+      </div>
+
+      <h3 style="margin-top:34px">Plano dia a dia com horários (ciclo de 8 semanas)</h3>
+      <p>Cada dia já tem o que estudar e em que horário. Marque conforme faz; o progresso fica salvo. <strong>Nunca pule o simulado de sábado nem o treino físico.</strong></p>
+      <div id="crono-prog" class="cprog"></div>
+      <div id="diario-list">
+        <h4 class="wk">Semana 1 — Português: base</h4>
+        <div class="chk"><input type="checkbox" id="pd1"><label for="pd1"><b>Seg · 19h–21h:</b> Interpretação de texto (aula+treino).</label></div>
+        <div class="chk"><input type="checkbox" id="pd2"><label for="pd2"><b>Ter · 19h–21h:</b> Ortografia, acentuação e pontuação.</label></div>
+        <div class="chk"><input type="checkbox" id="pd3"><label for="pd3"><b>Qua · 19h–21h:</b> Classes de palavras e formação.</label></div>
+        <div class="chk"><input type="checkbox" id="pd4"><label for="pd4"><b>Qui · 19h–21h:</b> RLM — proposições e conectivos (aula+treino).</label></div>
+        <div class="chk"><input type="checkbox" id="pd5"><label for="pd5"><b>Sex · 19h–21h:</b> Direito — art. 5º (direitos fundamentais).</label></div>
+        <div class="chk"><input type="checkbox" id="pd6"><label for="pd6"><b>Sáb · 08h30 (2–3 h):</b> Simulado 1 cronometrado + caderno de erros.</label></div>
+        <div class="chk"><input type="checkbox" id="pd7"><label for="pd7"><b>Dom · 09h revisão leve + treino físico:</b> Revisão dos erros + treino físico. Descanso.</label></div>
+        <h4 class="wk">Semana 2 — Português: sintaxe</h4>
+        <div class="chk"><input type="checkbox" id="pd8"><label for="pd8"><b>Seg · 19h–21h:</b> Termos da oração e período composto.</label></div>
+        <div class="chk"><input type="checkbox" id="pd9"><label for="pd9"><b>Ter · 19h–21h:</b> Regência e concordância (aula+treino).</label></div>
+        <div class="chk"><input type="checkbox" id="pd10"><label for="pd10"><b>Qua · 19h–21h:</b> Crase (aula+treino).</label></div>
+        <div class="chk"><input type="checkbox" id="pd11"><label for="pd11"><b>Qui · 19h–21h:</b> RLM — negações e De Morgan.</label></div>
+        <div class="chk"><input type="checkbox" id="pd12"><label for="pd12"><b>Sex · 19h–21h:</b> Direito — Administração Pública (LIMPE).</label></div>
+        <div class="chk"><input type="checkbox" id="pd13"><label for="pd13"><b>Sáb · 08h30 (2–3 h):</b> Simulado 2 cronometrado + correção.</label></div>
+        <div class="chk"><input type="checkbox" id="pd14"><label for="pd14"><b>Dom · 09h revisão leve + treino físico:</b> Revisão + treino físico. Descanso.</label></div>
+        <h4 class="wk">Semana 3 — RLM (lógica)</h4>
+        <div class="chk"><input type="checkbox" id="pd15"><label for="pd15"><b>Seg · 19h–21h:</b> Tabelas-verdade e equivalências.</label></div>
+        <div class="chk"><input type="checkbox" id="pd16"><label for="pd16"><b>Ter · 19h–21h:</b> Silogismos e argumentação (aula+treino).</label></div>
+        <div class="chk"><input type="checkbox" id="pd17"><label for="pd17"><b>Qua · 19h–21h:</b> Português — colocação pronominal e semântica.</label></div>
+        <div class="chk"><input type="checkbox" id="pd18"><label for="pd18"><b>Qui · 19h–21h:</b> Estatística (média, moda, mediana).</label></div>
+        <div class="chk"><input type="checkbox" id="pd19"><label for="pd19"><b>Sex · 19h–21h:</b> Direito — militares e segurança pública (art. 144).</label></div>
+        <div class="chk"><input type="checkbox" id="pd20"><label for="pd20"><b>Sáb · 08h30 (2–3 h):</b> Simulado 3 cronometrado + correção.</label></div>
+        <div class="chk"><input type="checkbox" id="pd21"><label for="pd21"><b>Dom · 09h revisão leve + treino físico:</b> Revisão + treino físico. Descanso.</label></div>
+        <h4 class="wk">Semana 4 — Matemática aplicada</h4>
+        <div class="chk"><input type="checkbox" id="pd22"><label for="pd22"><b>Seg · 19h–21h:</b> Porcentagem e razão/proporção (aula+treino).</label></div>
+        <div class="chk"><input type="checkbox" id="pd23"><label for="pd23"><b>Ter · 19h–21h:</b> Funções (afim e quadrática).</label></div>
+        <div class="chk"><input type="checkbox" id="pd24"><label for="pd24"><b>Qua · 19h–21h:</b> Probabilidade e conjuntos.</label></div>
+        <div class="chk"><input type="checkbox" id="pd25"><label for="pd25"><b>Qui · 19h–21h:</b> Português — figuras de linguagem e coesão.</label></div>
+        <div class="chk"><input type="checkbox" id="pd26"><label for="pd26"><b>Sex · 19h–21h:</b> Direito — LINDB (aula+treino).</label></div>
+        <div class="chk"><input type="checkbox" id="pd27"><label for="pd27"><b>Sáb · 08h30 (2–3 h):</b> Simulado 4 cronometrado + correção.</label></div>
+        <div class="chk"><input type="checkbox" id="pd28"><label for="pd28"><b>Dom · 09h revisão leve + treino físico:</b> Revisão + treino físico. Descanso.</label></div>
+        <h4 class="wk">Semana 5 — Direito e DH</h4>
+        <div class="chk"><input type="checkbox" id="pd29"><label for="pd29"><b>Seg · 19h–21h:</b> CF — nacionalidade e direitos políticos.</label></div>
+        <div class="chk"><input type="checkbox" id="pd30"><label for="pd30"><b>Ter · 19h–21h:</b> CF — Forças Armadas e militares dos Estados.</label></div>
+        <div class="chk"><input type="checkbox" id="pd31"><label for="pd31"><b>Qua · 19h–21h:</b> Direitos Humanos — DUDH e Pacto de San José.</label></div>
+        <div class="chk"><input type="checkbox" id="pd32"><label for="pd32"><b>Qui · 19h–21h:</b> Português — revisão dos campeões (crase, concordância).</label></div>
+        <div class="chk"><input type="checkbox" id="pd33"><label for="pd33"><b>Sex · 19h–21h:</b> RLM — refazer treinos de lógica.</label></div>
+        <div class="chk"><input type="checkbox" id="pd34"><label for="pd34"><b>Sáb · 08h30 (2–3 h):</b> Refazer o Simulado 1 (comparar a nota).</label></div>
+        <div class="chk"><input type="checkbox" id="pd35"><label for="pd35"><b>Dom · 09h revisão leve + treino físico:</b> Revisão + treino físico. Descanso.</label></div>
+        <h4 class="wk">Semana 6 — Literatura e Inglês</h4>
+        <div class="chk"><input type="checkbox" id="pd36"><label for="pd36"><b>Seg · 19h–21h:</b> Literatura — “Campo Geral” (enredo, Miguilim, temas).</label></div>
+        <div class="chk"><input type="checkbox" id="pd37"><label for="pd37"><b>Ter · 19h–21h:</b> Literatura — “Vidas Secas” (Fabiano, Baleia, seca).</label></div>
+        <div class="chk"><input type="checkbox" id="pd38"><label for="pd38"><b>Qua · 19h–21h:</b> Inglês — interpretação de texto (aula+treino).</label></div>
+        <div class="chk"><input type="checkbox" id="pd39"><label for="pd39"><b>Qui · 19h–21h:</b> Inglês — falsos cognatos e gramática básica.</label></div>
+        <div class="chk"><input type="checkbox" id="pd40"><label for="pd40"><b>Sex · 19h–21h:</b> Simulado aleatório (misto) cronometrado.</label></div>
+        <div class="chk"><input type="checkbox" id="pd41"><label for="pd41"><b>Sáb · 08h30 (2–3 h):</b> Refazer o simulado da pior nota.</label></div>
+        <div class="chk"><input type="checkbox" id="pd42"><label for="pd42"><b>Dom · 09h revisão leve + treino físico:</b> Revisão + treino físico. Descanso.</label></div>
+        <h4 class="wk">Semana 7 — Revisão geral</h4>
+        <div class="chk"><input type="checkbox" id="pd43"><label for="pd43"><b>Seg · 19h–21h:</b> Refazer o caderno de erros — Português.</label></div>
+        <div class="chk"><input type="checkbox" id="pd44"><label for="pd44"><b>Ter · 19h–21h:</b> Refazer o caderno de erros — RLM.</label></div>
+        <div class="chk"><input type="checkbox" id="pd45"><label for="pd45"><b>Qua · 19h–21h:</b> Refazer o caderno de erros — Direito/DH.</label></div>
+        <div class="chk"><input type="checkbox" id="pd46"><label for="pd46"><b>Qui · 19h–21h:</b> Reler resumos de Literatura + flashcards.</label></div>
+        <div class="chk"><input type="checkbox" id="pd47"><label for="pd47"><b>Sex · 19h–21h:</b> Simulado leve + revisão.</label></div>
+        <div class="chk"><input type="checkbox" id="pd48"><label for="pd48"><b>Sáb · 08h30 (2–3 h):</b> Treino físico forte (simule o TAF).</label></div>
+        <div class="chk"><input type="checkbox" id="pd49"><label for="pd49"><b>Dom · 09h revisão leve + treino físico:</b> Descanso ativo.</label></div>
+        <h4 class="wk">Semana 8 — Reta final</h4>
+        <div class="chk"><input type="checkbox" id="pd50"><label for="pd50"><b>Seg · 19h–21h:</b> Só flashcards e tabelas (Português).</label></div>
+        <div class="chk"><input type="checkbox" id="pd51"><label for="pd51"><b>Ter · 19h–21h:</b> Só flashcards e tabelas (RLM e Direito).</label></div>
+        <div class="chk"><input type="checkbox" id="pd52"><label for="pd52"><b>Qua · 19h–21h:</b> Reler as obras de Literatura (resumo).</label></div>
+        <div class="chk"><input type="checkbox" id="pd53"><label for="pd53"><b>Qui · 19h–21h:</b> Revisão relâmpago geral.</label></div>
+        <div class="chk"><input type="checkbox" id="pd54"><label for="pd54"><b>Sex · 19h–21h:</b> Simulado leve final.</label></div>
+        <div class="chk"><input type="checkbox" id="pd55"><label for="pd55"><b>Sáb · 08h30 (2–3 h):</b> Descanso + conferir documentos.</label></div>
+        <div class="chk"><input type="checkbox" id="pd56"><label for="pd56"><b>Dom · 09h revisão leve + treino físico:</b> DESCANSO total. Confie no que estudou.</label></div>
+      </div>
+      <div style="margin-top:14px"><button class="btn ghost" id="plano-reset" type="button">Zerar meu progresso do cronograma</button></div>
+
+      <div class="callout" style="margin-top:22px">
+        <h3 style="margin-top:0">🗓️ Semana da prova — só revisão</h3>
+        <p><b>Nada de matéria nova.</b> Reveja caderno de erros, tabelas, resumos de Literatura e flashcards. Chegue cedo, com documento e caneta transparente.</p>
+        <div class="tw"><table>
+          <thead><tr><th>Momento</th><th>O quê</th></tr></thead>
+          <tbody>
+          <tr><td class="k">Últimos 3 dias</td><td>Caderno de erros, tabelas (lógica, CF) e flashcards campeões. Treino físico leve.</td></tr>
+          <tr><td class="k">Véspera</td><td>Descanso. Checklist de documentos. Dormir cedo.</td></tr>
+          <tr><td class="k">Na prova</td><td>Todas as questões valem igual — <b>não deixe nada em branco</b>. Comece pelo que domina; eliminando 2 alternativas, chute. Reserve tempo para o gabarito.</td></tr>
+          </tbody>
+        </table></div>
+        <p class="peg" style="margin-bottom:0">Depois da prova vêm as fases eliminatórias (AFM/TAF, psicológico, saúde, investigação social) — por isso o físico e a documentação andam junto com o estudo.</p>
+      </div>
+</section>
+
+    <section id="memoria"><div class="card">
+      <p class="eyebrow">O método que fixa</p>
+      <h2 class="sec">Como fixar na memória (com base em evidências)</h2>
+      <div class="grid2">
+        <div class="mini"><h4>1. Recuperação ativa</h4><p style="margin:0">Feche o material e escreva/explique de memória; só depois confira.</p></div>
+        <div class="mini"><h4>2. Revisão espaçada</h4><p style="margin:0">Reveja cada tema em <strong>24 h, 7 dias e 21 dias</strong>. Flashcards automatizam.</p></div>
+        <div class="mini"><h4>3. Questões como método</h4><p style="margin:0">Metade do tempo resolvendo questões. Cada erro vira uma linha no caderno de erros.</p></div>
+        <div class="mini"><h4>4. Intercalação</h4><p style="margin:0">Alterne matérias no mesmo dia (Português + RLM + Direito).</p></div>
+        <div class="mini"><h4>5. Técnica Feynman</h4><p style="margin:0">Explique como para uma criança de 12 anos. Onde travar, falta entendimento.</p></div>
+        <div class="mini"><h4>6. Treino físico junto</h4><p style="margin:0">A AFM/TAF é eliminatória — inclua corrida e força na rotina desde já.</p></div>
+      </div>
+      <h4>Mnemônicos que salvam (PM-MG)</h4>
+      <ul>
+        <li><strong>PM = polícia Preventiva (ostensiva) e Manutenção da ordem</strong> · PC = judiciária.</li>
+        <li><strong>Forças Armadas (142):</strong> Defesa da Pátria + garantia dos poderes.</li>
+        <li><strong>Militares:</strong> proibidos de sindicalizar-se e fazer greve.</li>
+        <li><strong>LINDB:</strong> “ninguém se escusa de cumprir a lei alegando que não a conhece”; vacatio 45 dias.</li>
+        <li><strong>DUDH</strong> 1948 (ONU) · <strong>Pacto de San José</strong> 1969 (OEA).</li>
+        <li><strong>LIMPE</strong> — Legalidade, Impessoalidade, Moralidade, Publicidade, Eficiência.</li>
+        <li><strong>Negar “se p, então q” = “p e não q”</strong>; equivalente = contrapositiva.</li>
+        <li><strong>Crase:</strong> troca por masculino → “ao” = crase.</li>
+        <li><strong>Miguilim</strong> (Campo Geral) · <strong>Baleia</strong> (Vidas Secas).</li>
+      </ul>
+    </div></section>
+
+    <!-- ============ DOMÍNIO POR PRIORIDADE ============ -->
+    <section id="dominio">
+      <p class="eyebrow">Domínio por prioridade</p>
+      <h2 class="sec">Dominar cada P1, P2 e P3 — do jeito certo</h2>
+      <p>A prova tem 50 questões de igual valor (2 pts). Como a <strong>Língua Portuguesa</strong> e o <strong>Raciocínio Lógico-Matemático</strong> concentram a maior parte, os P1 vêm dessas duas e das <strong>Noções de Direito e DH</strong>. Estude nesta ordem: <strong>primeiro TODOS os P1</strong>, depois P2, e só então P3. Em cada tema: <b>Aprenda</b> → <b>Entenda</b> → <b class="okc">🎯 Na prova</b>. Pratique nas <a href="#treinos-sec">aulas + treinos</a>.</p>
+      <div class="prband p1"><span class="tag">P1</span><h3>Cai com certeza e pesa — domine 100%</h3><span class="cnt">comece por aqui</span></div>
+      <div class="domgrid">
+<div class="domc"><h4>Interpretação de texto <span class="mt">Língua Portuguesa</span></h4>
+  <p class="ap"><b>Aprenda:</b> interpretar é responder “o que ESTE texto diz?” usando só o que está escrito. Alternativa verdadeira “no mundo real”, mas fora do texto, está errada.</p>
+  <p><b>Entenda:</b> compreensão × inferência × extrapolação (esta quase sempre errada). Ache a ideia central e separe-a das secundárias.</p>
+  <p class="na"><b>🎯 Na prova:</b> desconfie de “sempre/todos” quando o texto restringe, e de informação plausível mas ausente.</p></div>
+<div class="domc"><h4>Concordância verbal <span class="mt">Língua Portuguesa</span></h4>
+  <p class="ap"><b>Aprenda:</b> o verbo combina com o sujeito. Os impessoais — haver(existir) e fazer(tempo) — ficam no singular. “Houveram” é sempre erro.</p>
+  <p><b>Entenda:</b> haver/fazer impessoais → singular; existir concorda (“Existem vagas”); voz passiva sintética concorda (“Vendem-se casas”).</p>
+  <p class="na"><b>🎯 Na prova:</b> “Houveram” e “fazem X anos” são sempre erro; cuidado com sujeito posposto.</p></div>
+<div class="domc"><h4>Crase <span class="mt">Língua Portuguesa</span></h4>
+  <p class="ap"><b>Aprenda:</b> crase é o acento no “a” quando dois “a” se encontram. Teste: troque por masculino — se virar “ao”, tem crase.</p>
+  <p><b>Entenda:</b> preposição a + artigo a(s), só diante de feminino. Locuções: às vezes, à noite, à medida que.</p>
+  <p class="na"><b>🎯 Na prova:</b> nunca antes de verbo, masculino ou pronome (a você); cidade sem artigo (vou a São Paulo).</p></div>
+<div class="domc"><h4>Conectivos e reescrita <span class="mt">Língua Portuguesa</span></h4>
+  <p class="ap"><b>Aprenda:</b> cada conectivo tem valor fixo; a reescrita só mantém o sentido se a relação continuar.</p>
+  <p><b>Entenda:</b> mas=oposição, portanto=conclusão, porque=causa, embora=concessão, se=condição.</p>
+  <p class="na"><b>🎯 Na prova:</b> “substituir X por Y mantém o sentido” → se trocaram causa por concessão, está errado.</p></div>
+<div class="domc"><h4>Lógica de proposições e negações <span class="mt">Raciocínio Lógico-Matemático</span></h4>
+  <p class="ap"><b>Aprenda:</b> o que mais cai é a negação. Negar “se p, então q” NÃO é “se não p...”; é “p e não q”.</p>
+  <p><b>Entenda:</b> ∧, ∨, →; De Morgan ~(p∧q)=~p∨~q; ~(p→q)=p∧~q; equivalente = contrapositiva ~q→~p; silogismos.</p>
+  <p class="na"><b>🎯 Na prova:</b> a equivalente é a contrapositiva, não a recíproca; negar “todo” vira “existe um que não”.</p></div>
+<div class="domc"><h4>Porcentagem e problemas <span class="mt">Raciocínio Lógico-Matemático</span></h4>
+  <p class="ap"><b>Aprenda:</b> aumentar 20% = ×1,20; tirar 20% = ×0,80. Aumentos sucessivos multiplicam. Regra de três: veja se as grandezas são diretas ou inversas.</p>
+  <p><b>Entenda:</b> J=C·i·t (simples); +10% e +20% = ×1,32 (32%). Inversa: mais recursos, menos tempo.</p>
+  <p class="na"><b>🎯 Na prova:</b> leia o comando (juro ou total? tempo ou quantidade?); confira a unidade.</p></div>
+<div class="domc"><h4>Constituição — direitos e Administração <span class="mt">Noções de Direito e DH</span></h4>
+  <p class="ap"><b>Aprenda:</b> o art. 5º lista os direitos de todos (casa inviolável, não ao anonimato). A Administração segue o LIMPE (art. 37).</p>
+  <p><b>Entenda:</b> nenhum direito é absoluto; legalidade do Estado = só o que a lei autoriza; concurso público (art. 37).</p>
+  <p class="na"><b>🎯 Na prova:</b> “direito absoluto” = errado; anonimato é vedado; casa inviolável tem exceções.</p></div>
+<div class="domc"><h4>Militares, Forças Armadas e Segurança Pública <span class="mt">Noções de Direito e DH</span></h4>
+  <p class="ap"><b>Aprenda:</b> a PM faz o policiamento ostensivo e a ordem pública (art. 144), subordinada ao Governador. Aos militares são vedadas sindicalização e greve.</p>
+  <p><b>Entenda:</b> art. 142 (Forças Armadas: defesa da Pátria); art. 144 (segurança pública, PM ostensiva); militares dos Estados.</p>
+  <p class="na"><b>🎯 Na prova:</b> não trocar as funções (PM = ostensiva/ordem; polícia civil = judiciária).</p></div>
+<div class="domc"><h4>LINDB e Direitos Humanos <span class="mt">Noções de Direito e DH</span></h4>
+  <p class="ap"><b>Aprenda:</b> a LINDB rege a aplicação das leis (ninguém se escusa por desconhecê-la; vacatio legis 45 dias). DH são universais: DUDH (1948) e Pacto de San José (1969).</p>
+  <p><b>Entenda:</b> integração: analogia, costumes, princípios; irretroatividade; DH orientam o uso da força (proporcionalidade).</p>
+  <p class="na"><b>🎯 Na prova:</b> “desconheço a lei, não cumpro” = errado; DUDH=ONU/1948; San José=OEA/1969.</p></div>
+      </div>
+      <div class="prband p2"><span class="tag">P2</span><h3>Cai bastante — garanta depois dos P1</h3><span class="cnt">segundo bloco</span></div>
+      <div class="domgrid">
+<div class="domc"><h4>Pontuação e sintaxe <span class="mt">Língua Portuguesa</span></h4>
+  <p class="ap"><b>Aprenda:</b> a vírgula nunca separa sujeito do verbo. Isola vocativo, aposto, adverbial anteposta e adjetiva explicativa.</p>
+  <p><b>Entenda:</b> explicativa (com vírgula) = todos; restritiva (sem vírgula) = alguns.</p>
+  <p class="na"><b>🎯 Na prova:</b> a vírgula muda o sentido da adjetiva; não separe verbo do complemento.</p></div>
+<div class="domc"><h4>Estatística e funções <span class="mt">Raciocínio Lógico-Matemático</span></h4>
+  <p class="ap"><b>Aprenda:</b> média=soma÷quantidade; moda=mais frequente; mediana=central ordenando. Função afim é reta; quadrática é parábola.</p>
+  <p><b>Entenda:</b> n(A∪B)=n(A)+n(B)−n(A∩B); a>0 → mínimo; PA: aₙ=a₁+(n−1)r.</p>
+  <p class="na"><b>🎯 Na prova:</b> mediana sempre ordenando; não confunda moda com média.</p></div>
+<div class="domc"><h4>Literatura — as obras <span class="mt">Literatura</span></h4>
+  <p class="ap"><b>Aprenda:</b> leia as obras do edital. Em 2025: “Campo Geral” (Miguilim, de Guimarães Rosa) e “Vidas Secas” (Fabiano/Baleia, de Graciliano Ramos).</p>
+  <p><b>Entenda:</b> enredo, personagens e temas (seca/miséria em Vidas Secas; infância/sertão em Campo Geral).</p>
+  <p class="na"><b>🎯 Na prova:</b> não troque autores/personagens; confirme as obras quando o novo edital sair.</p></div>
+<div class="domc"><h4>Inglês — interpretação <span class="mt">Língua Inglesa</span></h4>
+  <p class="ap"><b>Aprenda:</b> você precisa entender o texto, não “falar”. Foque ideia central, cognatos e conectivos.</p>
+  <p><b>Entenda:</b> itens gramaticais para o sentido; cuidado com falsos cognatos.</p>
+  <p class="na"><b>🎯 Na prova:</b> actually=na verdade; library=biblioteca; pretend=fingir; push=empurrar.</p></div>
+      </div>
+      <div class="prband p3"><span class="tag">P3</span><h3>Cai menos — pegue os pontos fáceis</h3><span class="cnt">por último</span></div>
+      <div class="domgrid">
+<div class="domc"><h4>Nacionalidade e direitos políticos <span class="mt">Noções de Direito e DH</span></h4>
+  <p class="ap"><b>Aprenda:</b> brasileiro nato × naturalizado (alguns cargos são privativos de nato); voto obrigatório/facultativo.</p>
+  <p><b>Entenda:</b> cargos privativos de nato (ex.: oficial das Forças Armadas, Presidente); alistamento eleitoral.</p>
+  <p class="na"><b>🎯 Na prova:</b> atenção aos cargos privativos de nato e às regras do voto.</p></div>
+      </div>
+      <div class="alert blue"><span class="tag">Estratégia</span> — todas as questões valem igual: invista onde há mais questões (Português e RLM), garanta Direito/DH e pegue os pontos “fáceis” de Literatura e Inglês. <b>Nunca deixe nada em branco.</b></div>
+</section>
+
+    <!-- ============ AULAS + TREINOS ============ -->
+    <section id="treinos-sec">
+      <div class="card">
+        <p class="eyebrow">Aula + prática</p>
+        <h2 class="sec">Aulas e treinos por tema</h2>
+        <p>Aqui você <strong>aprende primeiro</strong> (uma aula curta com exemplo) e <strong>treina em seguida</strong>. Em cada questão aparece o gabarito e a <strong>explicação do porquê</strong> — leia mesmo quando acertar: é o que fixa na memória. Tudo aqui dentro; você não precisa pesquisar fora.</p>
+        <div class="matfilter" id="matfilter"></div>
+      </div>
+      <div id="treinos"></div>
+    </section>
+
+    <!-- ============ ANTES DE CADA SIMULADO ============ -->
+    <section id="antes-sim"><div class="card">
+      <p class="eyebrow">Praticar · o que estudar antes</p>
+      <h2 class="sec">Antes de cada simulado — o que estudar</h2>
+      <p>Não faça os simulados no escuro. Estude o tema (na seção <strong>Aulas e treinos por tema</strong>, com filtro por matéria) e só depois faça o simulado. O ciclo que fixa: <strong>estudar → simular → o erro cai no caderno → estudar só o que errou.</strong></p>
+      <div class="grid2">
+        <div class="mini"><h4>Simulado 1 — faça agora, SEM estudar</h4><p style="margin:0">É o seu <strong>diagnóstico</strong>. Faça cronometrado para o site mostrar onde você está mais fraco.</p></div>
+        <div class="mini"><h4>Antes do Simulado 2 — Português e RLM</h4><p style="margin:0"><strong>Português:</strong> interpretação, crase, concordância, pontuação.<br><strong>RLM:</strong> proposições, negações, porcentagem.</p></div>
+        <div class="mini"><h4>Antes do Simulado 3 — Direito e DH</h4><p style="margin:0">CF (direitos, Administração, militares, segurança pública), LINDB, DUDH e Pacto de San José. Reforce a lógica de argumentação.</p></div>
+        <div class="mini"><h4>Antes do Simulado 4 — fechar tudo</h4><p style="margin:0">Leia as obras de <strong>Literatura</strong> e treine <strong>Inglês</strong> (interpretação). Refaça o <strong>Caderno de erros</strong> até zerar e rode <strong>Só Português</strong>.</p></div>
+      </div>
+      <div class="callout" style="margin-top:16px">
+        <h4 style="margin-top:0">A ordem de prioridade</h4>
+        <p style="margin:0">Sempre: <strong>1º Língua Portuguesa</strong> (mais questões) → <strong>2º Raciocínio Lógico-Matemático</strong> → <strong>3º Noções de Direito e DH</strong> → <strong>4º Literatura e Inglês</strong> (pontos fáceis). Como todas as questões valem igual, some o máximo de acertos e <strong>não deixe nada em branco</strong>. E treine o físico em paralelo.</p>
+      </div>
+    </div></section>
+
+    <!-- ============ 7. SIMULADO ============ -->
+    <section id="simulado"><div class="card">
+      <p class="eyebrow">Seção 7 · múltipla escolha (A–D) · formato da prova</p>
+      <h2 class="sec">Simulado no formato da prova</h2>
+      <p>Marque uma alternativa (A–D) em cada questão e clique em <strong>Corrigir prova</strong>. O site mostra sua nota e o comentário de cada questão. Use como diagnóstico (Semana 0) e refaça na Semana 6.</p>
+      <div id="sim"></div>
+      <div class="simbar">
+        <button class="btn" id="corrigir">Corrigir prova</button>
+        <button class="btn ghost" id="limpar">Limpar</button>
+        <span class="score" id="scorebox" aria-live="polite"></span>
+      </div>
+    </div></section>
+
+    <!-- ============ SIMULADO 2 ============ -->
+    <section id="simulado2"><div class="card">
+      <p class="eyebrow">Prova online 2 · múltipla escolha</p>
+      <h2 class="sec">Simulado 2 (inédito)</h2>
+      <p>Segunda prova completa no formato da PM-MG (Língua Portuguesa, Raciocínio Lógico-Matemático, Noções de Direito e DH, Literatura e Inglês). Marque tudo e clique em <strong>Corrigir</strong> — a explicação de cada questão aparece embaixo dela.</p>
+      <div id="quiz-sim2"></div>
+    </div></section>
+
+    <!-- ============ SIMULADO 3 ============ -->
+    <section id="simulado3"><div class="card">
+      <p class="eyebrow">Prova online 3 · múltipla escolha</p>
+      <h2 class="sec">Simulado 3 (inédito)</h2>
+      <p>Terceira prova completa no formato da PM-MG (Português, RLM, Direito/DH, Literatura e Inglês). Cronometre, marque tudo e clique em <strong>Corrigir</strong>.</p>
+      <div id="quiz-sim3"></div>
+    </div></section>
+
+    <!-- ============ SIMULADO 4 ============ -->
+    <section id="simulado4"><div class="card">
+      <p class="eyebrow">Prova online 4 · múltipla escolha</p>
+      <h2 class="sec">Simulado 4 (inédito)</h2>
+      <p>Quarta prova completa no formato da PM-MG. Use o <strong>cronômetro</strong> da barra de correção para treinar o ritmo. Marque tudo e clique em <strong>Corrigir</strong> — o painel <em>Revise seus erros</em> aparece no fim.</p>
+      <div id="quiz-sim4"></div>
+    </div></section>
+
+    <!-- ============ SIMULADO ALEATÓRIO ============ -->
+    <section id="aleatorio"><div class="card">
+      <p class="eyebrow">Prova sorteada do banco · 40 questões · 3 horas</p>
+      <h2 class="sec">Simulado aleatório</h2>
+      <p>Sorteia <strong>40 questões do banco inteiro</strong> (todos os simulados e treinos, ~300 questões), <strong>sempre diferentes</strong> — assim você treina o conteúdo, e não a ordem das respostas. Tem cronômetro de 3 h, e os erros vão para o seu <a href="#caderno">caderno</a>.</p>
+      <button class="btn" id="aleatorio-gerar" type="button">Gerar 40 questões</button>
+      <div id="quiz-aleatorio" style="margin-top:14px"></div>
+    </div></section>
+
+    <!-- ============ SÓ ESPECÍFICOS ============ -->
+    <section id="especifico"><div class="card">
+      <p class="eyebrow">Treino focado · a matéria que mais pesa</p>
+      <h2 class="sec">Só Língua Portuguesa</h2>
+      <p>A <strong>Língua Portuguesa</strong> é a disciplina com mais questões da prova. Aqui você treina <strong>só ela</strong>: questões sorteadas do banco de Português, sempre diferentes. Os erros vão para o seu <a href="#caderno">caderno</a>.</p>
+      <button class="btn" id="espec-gerar" type="button">Gerar 10 de Português</button>
+      <div id="espec-list" style="margin-top:14px"></div>
+    </div></section>
+
+    <!-- ============ CADERNO DE ERROS ============ -->
+    <section id="caderno"><div class="card">
+      <p class="eyebrow">Revisar</p>
+      <h2 class="sec">Meu caderno de erros <span id="cad-count" class="cadcount"></span></h2>
+      <p>Toda questão que você errar nos simulados e nos treinos entra aqui <strong>automaticamente</strong> e fica salva no seu navegador. Refaça-as quantas vezes precisar — <strong>rever o próprio erro é o que mais fixa</strong>. Quando acertar, clique em <em>Tirar do caderno as que acertei</em> para ele ir enxugando.</p>
+      <div class="cadtools">
+        <button class="btn ghost" id="cad-remove" type="button">Tirar do caderno as que acertei</button>
+        <button class="btn ghost" id="cad-download" type="button">Baixar para imprimir</button>
+        <button class="btn ghost" id="cad-clear" type="button">Limpar caderno</button>
+      </div>
+      <div id="caderno-list"></div>
+    </div></section>
+
+    <!-- ============ 9. FLASHCARDS ============ -->
+    <section id="flashcards"><div class="card">
+      <p class="eyebrow">Seção 9 · 80 cartões</p>
+      <h2 class="sec">Flashcards — revisão diária</h2>
+      <p>Toque no cartão para ver a resposta. Responda em voz alta <em>antes</em> de virar (recuperação ativa).</p>
+      <div class="fctools">
+        <button class="btn ghost" id="fc-shuffle">Embaralhar</button>
+        <button class="btn ghost" id="fc-all">Mostrar/ocultar todas</button>
+        <span class="score" id="fc-count"></span>
+      </div>
+      <div id="fcs" class="weights" style="gap:12px"></div>
+    </div></section>
+
+    <!-- ============ REVISÃO DE VÉSPERA ============ -->
+    <section id="vespera"><div class="card">
+      <p class="eyebrow">Reta final · leia na véspera e na manhã da prova</p>
+      <h2 class="sec">Revisão de véspera — tudo numa folha</h2>
+      <p>Na véspera e na manhã da prova, <strong>não estude matéria nova</strong>. Releia só isto e descanse.</p>
+      <h3>Mnemônicos e fatos que caem</h3>
+      <div class="tw"><table>
+        <thead><tr><th>Tema</th><th>Guarde</th></tr></thead>
+        <tbody>
+        <tr><td class="k">Prova</td><td>50 questões · 2 pts cada = 100 pts · múltipla escolha (1 correta) · nunca deixar em branco</td></tr>
+        <tr><td class="k">O que mais pesa</td><td>Língua Portuguesa e Raciocínio Lógico-Matemático</td></tr>
+        <tr><td class="k">Polícia Militar (art. 144)</td><td>policiamento ostensivo e ordem pública; subordinada ao Governador</td></tr>
+        <tr><td class="k">Forças Armadas (art. 142)</td><td>defesa da Pátria e garantia dos poderes</td></tr>
+        <tr><td class="k">Militares</td><td>proibidos de sindicalizar-se e fazer greve</td></tr>
+        <tr><td class="k">Casa inviolável (art. 5º)</td><td>sem consentimento só em flagrante/desastre/socorro; de dia, com ordem judicial</td></tr>
+        <tr><td class="k">LINDB</td><td>ninguém se escusa por desconhecer a lei; vacatio 45 dias</td></tr>
+        <tr><td class="k">DUDH / San José</td><td>1948 (ONU) / 1969 (OEA)</td></tr>
+        <tr><td class="k">Literatura</td><td>Campo Geral (Miguilim, Guimarães Rosa) · Vidas Secas (Fabiano/Baleia, Graciliano)</td></tr>
+        <tr><td class="k">Falsos cognatos</td><td>actually=na verdade · library=biblioteca · push=empurrar</td></tr>
+        </tbody>
+      </table></div>
+      <h3>As pegadinhas campeãs</h3>
+      <ul>
+        <li><strong>“Houveram” não existe</strong> nesse sentido → “Houve”.</li>
+        <li><strong>Negação de “Se p, então q”</strong> = “p e não q”; equivalente = contrapositiva.</li>
+        <li><strong>Mediana:</strong> ordene os dados antes.</li>
+        <li><strong>Vírgula</strong> nunca separa sujeito do verbo.</li>
+        <li><strong>Direito absoluto?</strong> Nenhum é; anonimato é vedado.</li>
+        <li><strong>PM</strong> é ostensiva/ordem (não judiciária).</li>
+        <li><strong>Não troque</strong> autores/personagens de Literatura.</li>
+      </ul>
+      <div class="alert red"><span class="tag">Regra de ouro no dia</span> — todas as questões valem igual: comece pelo que domina, <b>não deixe nada em branco</b> (eliminando 2, o chute vira 50%) e reserve tempo para passar o gabarito a limpo.</div>
+    </div></section>
+
+    <!-- ============ 10. FONTES ============ -->
+    <section id="fontes"><div class="card">
+      <p class="eyebrow">Seção 10</p>
+      <h2 class="sec">Fontes oficiais — onde baixar</h2>
+      <div class="tw"><table>
+        <thead><tr><th>Material</th><th>Onde</th></tr></thead>
+        <tbody>
+        <tr><td class="k">Edital, provas anteriores e resultados (CFSd)</td><td>policiamilitar.mg.gov.br · Centro de Recrutamento e Seleção (CRS) da PMMG</td></tr>
+        <tr><td class="k">Constituição Federal (arts. 5º, 37, 142, 144)</td><td>planalto.gov.br</td></tr>
+        <tr><td class="k">LINDB (Decreto-Lei 4.657/1942)</td><td>planalto.gov.br</td></tr>
+        <tr><td class="k">Declaração Universal dos Direitos Humanos (1948)</td><td>gov.br · ONU</td></tr>
+        <tr><td class="k">Convenção Americana (Pacto de San José, 1969)</td><td>planalto.gov.br (Decreto 678/1992)</td></tr>
+        <tr><td class="k">Literatura — obras do edital</td><td>“Campo Geral” (Guimarães Rosa) e “Vidas Secas” (Graciliano Ramos) — leia os livros + resumos comentados</td></tr>
+        </tbody>
+      </table></div>
+      <p class="peg">Quando o novo edital sair, confirme a <strong>banca</strong>, as <strong>obras de Literatura</strong> e o percentual mínimo de aprovação.</p>
+    </div></section>
+
+    <!-- ============ 11. CLAUDE ============ -->
+    <section id="claude"><div class="card">
+      <p class="eyebrow">Seção 11</p>
+      <h2 class="sec">Seu tutor infinito no Claude Code</h2>
+      <p>Este site é o material fixo. Para <strong>questões ilimitadas e correção personalizada</strong>, use o Claude Code como cursinho particular:</p>
+      <ol>
+        <li>Crie uma pasta <code>pmmg-2026</code> e coloque nela: <code>CLAUDE.md</code>, <code>base_conhecimento_pmmg.md</code> e uma subpasta <code>leis/</code> (CF, LINDB, DUDH, Pacto de San José) e os resumos de Literatura.</li>
+        <li>Abra o terminal na pasta e rode <code>claude</code> — o <code>CLAUDE.md</code> ativa o modo tutor.</li>
+        <li>Peça em português: <em>"monte a sessão de hoje"</em>, <em>"10 questões de crase com gabarito"</em>, <em>"me explique Vidas Secas"</em>, <em>"corrija: 1-B, 2-C…"</em>, <em>"revisão final por prioridade"</em>.</li>
+        <li>O tutor mantém <code>progresso.md</code> e <code>erros.md</code>.</li>
+      </ol>
+      <div class="alert blue"><span class="tag">Dica</span> — coloque a lei seca em <code>leis/</code> para o tutor citar artigo sem inventar, e peça sempre no formato da prova (múltipla escolha).</div>
+    </div></section>
+
+    <footer>
+      Material de estudo · Concurso Soldado PM-MG (CFSd) · projetado pelo último edital (2025), a ser ajustado quando o novo sair.<br>
+      Confira sempre os dados no edital oficial. Bons estudos e boa prova. 🚔
+    </footer>
+  </main>
+</div>
+<button class="back" id="back" aria-label="Voltar ao topo">↑</button>
+
+<script>
+/* ---------- tema ---------- */
+(function(){
+  var root=document.documentElement, key="dmae:theme";
+  try{var s=localStorage.getItem(key); if(s)root.setAttribute("data-theme",s);}catch(e){}
+  document.getElementById("theme").onclick=function(){
+    var cur=root.getAttribute("data-theme");
+    var dark=cur? cur==="dark" : matchMedia("(prefers-color-scheme:dark)").matches;
+    var nx=dark?"light":"dark"; root.setAttribute("data-theme",nx);
+    try{localStorage.setItem(key,nx);}catch(e){}
+  };
+})();
+/* ---------- countdown ---------- */
+(function(){
+  var prova=null; /* PM-MG: edital do próximo concurso ainda não saiu */
+  function upd(){var e=document.getElementById("cddays");if(e)e.textContent=prova?Math.max(0,Math.ceil((prova-new Date())/86400000))+" dias":"edital em breve";}
+  upd();
+})();
+/* ---------- menu mobile + TOC ativo ---------- */
+(function(){
+  var toc=document.getElementById("toc"),mb=document.getElementById("menub");
+  mb.onclick=function(){var o=toc.classList.toggle("open");document.body.classList.toggle("navopen",o);};
+  toc.addEventListener("click",function(e){if(e.target.tagName==="A"){toc.classList.remove("open");document.body.classList.remove("navopen");}});
+  var links=[].slice.call(toc.querySelectorAll("a"));
+  var map={}; links.forEach(function(a){map[a.getAttribute("href").slice(1)]=a;});
+  var obs=new IntersectionObserver(function(en){
+    en.forEach(function(x){ if(x.isIntersecting){ links.forEach(function(a){a.classList.remove("on");}); var a=map[x.target.id]; if(a)a.classList.add("on"); }});
+  },{rootMargin:"-64px 0px -70% 0px"});
+  document.querySelectorAll("section[id]").forEach(function(s){obs.observe(s);});
+  var back=document.getElementById("back");
+  addEventListener("scroll",function(){back.classList.toggle("show",scrollY>600);});
+  back.onclick=function(){scrollTo({top:0,behavior:"smooth"});};
+})();
+/* ---------- plano checklist ---------- */
+(function(){
+  function K(){return window.DMAE_KEY("plano");}
+  function readSt(){try{return JSON.parse(localStorage.getItem(K())||"{}");}catch(e){return{};}}
+  function renderProg(){
+    var boxes=document.querySelectorAll("#diario-list input");
+    var total=boxes.length,done=0;[].forEach.call(boxes,function(c){if(c.checked)done++;});
+    var pct=total?Math.round(done/total*100):0;
+    var el=document.getElementById("crono-prog");
+    if(el)el.innerHTML='<div class="cprow"><span><b>Progresso do plano diário</b></span><span class="cbar"><i style="width:'+pct+'%"></i></span><span>'+done+'/'+total+' dias ('+pct+'%)</span></div>';
+  }
+  window.DMAE_planoApply=function(){
+    var st=readSt();
+    document.querySelectorAll("#plano-list input, #diario-list input").forEach(function(c){
+      var on=!!st[c.id];c.checked=on;c.closest(".chk").classList.toggle("done",on);
+    });
+    renderProg();
+  };
+  document.querySelectorAll("#plano-list input, #diario-list input").forEach(function(c){
+    c.onchange=function(){
+      var st=readSt();st[c.id]=c.checked;try{localStorage.setItem(K(),JSON.stringify(st));}catch(e){}
+      c.closest(".chk").classList.toggle("done",c.checked);renderProg();
+      if(window.DMAE_syncPush)window.DMAE_syncPush();
+    };
+  });
+  var pr=document.getElementById("plano-reset");
+  if(pr)pr.onclick=function(){
+    if(!confirm("Desmarcar todos os dias e semanas do cronograma?"))return;
+    try{localStorage.removeItem(K());}catch(e){}
+    document.querySelectorAll("#plano-list input, #diario-list input").forEach(function(c){c.checked=false;c.closest(".chk").classList.remove("done");});
+    renderProg();
+    if(window.DMAE_syncPush)window.DMAE_syncPush();
+  };
+  window.DMAE_planoApply();
+})();
+
+/* ---------- SIMULADO ---------- */
+var SIM=[
+{b:"Língua Portuguesa e Interpretação (1–8)"},
+{n:1,t:"Assinale a alternativa com crase empregada corretamente.",o:["O policial se dedicou à investigação.","Ele voltou à pé para o quartel.","Refiro-me à Vossa Excelência.","Fomos à Belo Horizonte."],c:0,e:"“Dedicar-se a” + “a investigação” (fem.) = à (troca: “ao trabalho”). Erros: antes de verbo/“a pé”, pronome de tratamento, cidade sem artigo."},
+{n:2,t:"Assinale a alternativa correta quanto à concordância verbal.",o:["Houveram muitos aprovados.","Fazem dez anos que ele ingressou.","Existem vagas para o CFSd.","Chegou os resultados."],c:2,e:"“Existir” concorda (“Existem vagas”). “Haver”(existir) e “fazer”(tempo) são impessoais: “Houve”, “Faz dez anos”. D: “Chegaram”."},
+{n:3,t:"Reescrita de \"Embora estivesse cansado, o soldado cumpriu a missão\" que PRESERVA o sentido:",o:["Como estava cansado, o soldado cumpriu a missão.","O soldado estava cansado; portanto, cumpriu a missão.","O soldado estava cansado, mas cumpriu a missão.","Se estivesse cansado, o soldado cumpriria a missão."],c:2,e:"“Embora” = concessão; a adversativa “mas” mantém a oposição. As outras mudam para causa/conclusão/condição."},
+{n:4,t:"Assinale a alternativa com pontuação correta.",o:["Os soldados, que chegaram atrasados perderam a formatura.","O comandante solicitou, à tropa, disciplina.","Terminada a instrução, os soldados descansaram.","A equipe treinou, e descansou."],c:2,e:"Oração reduzida anteposta pede vírgula. A: falta vírgula (ou restritiva sem vírgula). B: separa verbo do complemento. D: sem vírgula (mesmo sujeito)."},
+{n:5,t:"O termo “que”, em “Este é o edital que li”, classifica-se como:",o:["Conjunção integrante.","Pronome relativo.","Preposição.","Advérbio."],c:1,e:"Retoma “o edital” e exerce função sintática → pronome relativo."},
+{n:6,t:"Em “Ele foi um leão na prova”, há a figura de linguagem:",o:["Metonímia.","Metáfora.","Eufemismo.","Hipérbole."],c:1,e:"Comparação implícita (leão = corajoso/forte) → metáfora."},
+{n:7,t:"Assinale a colocação pronominal correta.",o:["Me chamaram para o treinamento.","Nunca esqueça-se do compromisso.","Não se admite indisciplina.","Que preparou-se bem, foi aprovado."],c:2,e:"Palavra atrativa (“não”) → próclise: “não se admite”. As demais violam a próclise/início de frase."},
+{n:8,t:"Sobre interpretação de texto, assinale a correta.",o:["A resposta certa vai além do que o texto diz.","A alternativa correta se apoia no que o texto afirma.","Toda alternativa verdadeira no mundo real está certa.","O título nunca ajuda na interpretação."],c:1,e:"A resposta se ancora no texto; extrapolar é armadilha."},
+{b:"Raciocínio Lógico-Matemático (9–14)"},
+{n:9,t:"A negação de “Todo soldado é disciplinado” é:",o:["Nenhum soldado é disciplinado.","Algum soldado não é disciplinado.","Todo soldado é indisciplinado.","Nenhum soldado é indisciplinado."],c:1,e:"Negar “todo A é B” = existe A que não é B."},
+{n:10,t:"Pela Lei de De Morgan, a negação de “p e q” é:",o:["não p e não q.","não p ou não q.","p ou q.","se p então q."],c:1,e:"~(p∧q) = ~p ∨ ~q."},
+{n:11,t:"\"Se chove, então a rua molha\" é logicamente equivalente a:",o:["Se a rua molha, então chove.","Se a rua não molha, então não chove.","Chove e a rua não molha.","Se não chove, a rua não molha."],c:1,e:"Equivalente = contrapositiva ~q→~p."},
+{n:12,t:"30% de 200 é:",o:["50","60","70","80"],c:1,e:"0,30 × 200 = 60."},
+{n:13,t:"Em 3, 5, 5, 9, 13, a mediana é:",o:["5","9","7","5,5"],c:0,e:"Ordenados, o valor central (3º de 5) é 5."},
+{n:14,t:"Numa PA de razão 3 e 1º termo 4, o 6º termo é:",o:["16","19","22","13"],c:1,e:"a6 = 4 + (6−1)·3 = 19."},
+{b:"Noções de Direito e Direitos Humanos (15–20)"},
+{n:15,t:"A Polícia Militar, conforme o art. 144 da CF, é responsável, sobretudo, por:",o:["A polícia judiciária da União.","O policiamento ostensivo e a preservação da ordem pública.","A investigação de crimes federais.","A defesa externa do país."],c:1,e:"À PM cabe a polícia ostensiva e a preservação da ordem pública; a investigação é da polícia judiciária (civil/federal)."},
+{n:16,t:"Sobre direitos fundamentais (art. 5º), assinale a correta.",o:["São absolutos e ilimitados.","A casa é asilo inviolável, com exceções (flagrante, desastre, socorro; de dia, ordem judicial).","O anonimato é livremente permitido.","Não se aplicam aos estrangeiros."],c:1,e:"Casa inviolável com exceções. Nenhum direito é absoluto; anonimato é vedado."},
+{n:17,t:"Segundo a LINDB (Lei 4.657/42), assinale a correta.",o:["Pode-se alegar desconhecimento da lei para não cumpri-la.","Ninguém se escusa de cumprir a lei alegando que não a conhece.","A lei entra em vigor sempre na data da publicação.","O costume não integra o direito."],c:1,e:"Art. 3º da LINDB: ninguém se escusa alegando desconhecimento."},
+{n:18,t:"A Declaração Universal dos Direitos Humanos foi proclamada em:",o:["1945, pela OEA.","1948, pela ONU.","1969, em San José.","1988, no Brasil."],c:1,e:"DUDH: ONU, 1948. (O Pacto de San José é de 1969, OEA.)"},
+{n:19,t:"Sobre os militares dos Estados, assinale a correta.",o:["Podem se sindicalizar e fazer greve.","São proibidos de sindicalizar-se e de fazer greve.","Não se submetem a hierarquia e disciplina.","Elegem seus comandantes."],c:1,e:"Aos militares são vedadas a sindicalização e a greve (CF)."},
+{n:20,t:"O uso da força pelo policial deve observar:",o:["Apenas a vontade do agente.","Legalidade, necessidade, proporcionalidade e moderação.","A ausência de qualquer limite.","Somente a ordem do superior, sem limites."],c:1,e:"Princípios do uso da força, alinhados aos Direitos Humanos."},
+{b:"Literatura e Inglês (21–24)"},
+{n:21,t:"O protagonista menino da novela “Campo Geral”, de Guimarães Rosa, é:",o:["Fabiano.","Miguilim.","Riobaldo.","Baleia."],c:1,e:"Miguilim é o menino de “Campo Geral”. Fabiano/Baleia são de “Vidas Secas”; Riobaldo é de “Grande Sertão: Veredas”."},
+{n:22,t:"Em “Vidas Secas”, de Graciliano Ramos, a cadela da família chama-se:",o:["Piedade.","Baleia.","Fiel.","Sultão."],c:1,e:"Baleia é a cadela de “Vidas Secas”."},
+{n:23,t:"No texto: “She is actually a police officer.” A palavra “actually” significa:",o:["atualmente.","na verdade.","ativamente.","atualizada."],c:1,e:"“Actually” = na verdade (falso cognato de “atualmente”, que é “currently”/“nowadays”)."},
+{n:24,t:"“The library was closed.” A palavra “library” significa:",o:["livraria.","biblioteca.","liberdade.","livro."],c:1,e:"“Library” = biblioteca (falso cognato de “livraria”, que é “bookstore”)."}
+];
+/* Painel "Revise seus erros" — usado por todos os simulados e treinos */
+window.renderErrPanel=function(host,anchorEl,errors,total){
+  var id=host.id+"-errpanel";
+  var old=document.getElementById(id); if(old)old.parentNode.removeChild(old);
+  var d=document.createElement("div"); d.className="errpanel"; d.id=id;
+  if(!errors.length){
+    d.className+=" zero";
+    d.innerHTML='<h4>Você não errou nenhuma! 🎉</h4><p>Acertou todas as '+total+'. Refaça daqui a alguns dias sem olhar — se continuar acertando, está fixado.</p>';
+  } else {
+    var lis=errors.map(function(e){
+      return '<li><a href="#'+e.anchor+'">Questão '+e.n+'</a> — você marcou <b class="you">'+(e.you||'em branco')+'</b>; a certa é <b class="ok">'+e.correct+'</b>.'
+        +'<div class="eq">"'+e.qt+'"</div>'
+        +'<div class="ei"><b>Entenda o porquê:</b> '+e.expl+'</div></li>';
+    }).join("");
+    d.innerHTML='<h4>Revise seus erros — '+errors.length+' de '+total+'</h4>'
+      +'<p><b>Não passe reto:</b> leia o porquê de cada uma. É entendendo o motivo (não decorando a letra) que você fixa na memória e reconhece a mesma pegadinha na prova. Clique no número para reler a questão inteira.</p>'
+      +'<ol>'+lis+'</ol>'
+      +'<p class="tip">Anote cada erro no seu caderno de erros: o que errou · a regra certa · como não repetir. Revise esse caderno em 24 h, 7 dias e 21 dias.</p>';
+  }
+  anchorEl.parentNode.insertBefore(d,anchorEl.nextSibling);
+  d.scrollIntoView({behavior:"smooth",block:"nearest"});
+  return d;
+};
+
+/* Cronômetro de prova (treina o ritmo das 3 h) */
+window.attachTimer=function(simbar,minutes){
+  if(!simbar||simbar.querySelector(".timer"))return;
+  var total=minutes*60,left=total,iv=null;
+  function two(n){return(n<10?"0":"")+n;}
+  function fmt(s){var h=Math.floor(s/3600),m=Math.floor((s%3600)/60),x=s%60;return h>0?h+":"+two(m)+":"+two(x):m+":"+two(x);}
+  var wrap=document.createElement("span");wrap.className="timer";
+  var disp=document.createElement("b");disp.className="tdisp";
+  var start=document.createElement("button");start.type="button";start.className="btn ghost tbtn2";start.textContent="▶ Cronômetro";
+  var reset=document.createElement("button");reset.type="button";reset.className="btn ghost tbtn2";reset.textContent="Zerar";reset.style.display="none";
+  function paint(){disp.textContent="⏱ "+fmt(left);disp.classList.toggle("low",left<=300);}
+  function stop(){if(iv){clearInterval(iv);iv=null;}start.textContent="▶ Retomar";}
+  function tick(){left--;if(left<=0){left=0;stop();disp.textContent="⏱ Tempo esgotado";disp.classList.add("low");return;}paint();}
+  paint();
+  start.onclick=function(){if(iv){stop();return;}if(left<=0)left=total;iv=setInterval(tick,1000);start.textContent="⏸ Pausar";reset.style.display="";};
+  reset.onclick=function(){stop();left=total;paint();start.textContent="▶ Cronômetro";};
+  wrap.appendChild(disp);wrap.appendChild(start);wrap.appendChild(reset);
+  simbar.appendChild(wrap);
+};
+
+/* Histórico de desempenho (salvo no navegador) */
+window.recordScore=function(key,label,pct,ac,total,pts,mp,bymat){
+  var K=window.DMAE_KEY("scores"),arr=[];
+  try{arr=JSON.parse(localStorage.getItem(K)||"[]");}catch(e){}
+  function two2(n){return(n<10?"0":"")+n;}
+  var d=new Date();
+  var rec={k:key,l:label,p:pct,a:ac,n:total,d:two2(d.getDate())+"/"+two2(d.getMonth()+1)};
+  if(pts!=null){rec.pt=pts;rec.mp=mp;}
+  if(bymat)rec.m=bymat;
+  arr.push(rec);
+  if(arr.length>40)arr=arr.slice(-40);
+  try{localStorage.setItem(K,JSON.stringify(arr));}catch(e){}
+  if(window.renderDesempenho)window.renderDesempenho();
+  if(window.renderProxima)window.renderProxima();
+  if(window.DMAE_syncPush)window.DMAE_syncPush();
+};
+/* agrega acerto por matéria a partir do histórico */
+window.DMAE_fraca=function(scores){
+  var agg={};(scores||[]).forEach(function(s){if(s.m){for(var k in s.m){agg[k]=agg[k]||{ok:0,tot:0};agg[k].ok+=s.m[k].ok;agg[k].tot+=s.m[k].tot;}}});
+  var ks=Object.keys(agg).filter(function(k){return agg[k].tot>=3;});
+  if(!ks.length)return null;
+  ks.sort(function(a,b){return (agg[a].ok/agg[a].tot)-(agg[b].ok/agg[b].tot);});
+  return {mat:ks[0],pct:Math.round(agg[ks[0]].ok/agg[ks[0]].tot*100)};
+};
+/* recomendação personalizada "Sua próxima ação" */
+window.renderProxima=function(){
+  var host=document.getElementById("proxima");if(!host)return;
+  var scores=[],cad=[];
+  try{scores=JSON.parse(localStorage.getItem(window.DMAE_KEY("scores"))||"[]");}catch(e){}
+  try{cad=JSON.parse(localStorage.getItem(window.DMAE_KEY("cadernoerros"))||"[]");}catch(e){}
+  var txt,href,bt;
+  if(!scores.length){
+    txt="Faça o <b>Simulado 1</b> cronometrado, <b>sem estudar antes</b>. É o diagnóstico: mostra onde você está mais fraco e já enche seu caderno de erros.";
+    href="#simulado";bt="Fazer o Simulado 1 →";
+  } else if(cad.length>0){
+    txt="Você tem <b>"+cad.length+"</b> quest"+(cad.length>1?"ões":"ão")+" no seu <b>caderno de erros</b>. Refazer o próprio erro é o que mais fixa — comece por aí.";
+    href="#caderno";bt="Abrir meu caderno →";
+  } else {
+    txt="Sem erros pendentes! Reforce a matéria que mais cai: treine <b>Só Língua Portuguesa</b>.";
+    href="#especifico";bt="Treinar Português →";
+  }
+  var f=window.DMAE_fraca(scores),foco="";
+  if(f)foco='<p class="foco">🎯 Sua matéria mais fraca até agora: <b>'+f.mat+'</b> ('+f.pct+'% de acerto). Dê atenção extra a ela.</p>';
+  host.innerHTML='<h4>Sua próxima ação</h4><p>'+txt+'</p><a class="btn" href="'+href+'">'+bt+'</a>'+foco;
+  host.hidden=false;
+};
+window.renderDesempenho=function(){
+  var host=document.getElementById("desempenho");if(!host)return;
+  var arr=[];try{arr=JSON.parse(localStorage.getItem(window.DMAE_KEY("scores"))||"[]");}catch(e){}
+  if(!arr.length){host.innerHTML='<p class="dhint">Faça um simulado e clique em <b>Corrigir</b>: suas notas ficam salvas aqui para você acompanhar a evolução.</p>';return;}
+  var best={},bpt={},bmp={};arr.forEach(function(s){if(best[s.l]==null||s.p>best[s.l])best[s.l]=s.p;if(s.pt!=null&&(bpt[s.l]==null||s.pt>bpt[s.l])){bpt[s.l]=s.pt;bmp[s.l]=s.mp;}});
+  var bestHTML=Object.keys(best).map(function(l){
+    if(bpt[l]!=null){var ok=bpt[l]>=25;return '<span class="dchip">'+l+': <b>'+bpt[l]+'/'+bmp[l]+' pts</b> '+(ok?'✅':'⚠️')+'</span>';}
+    return '<span class="dchip">'+l+': <b>'+best[l]+'%</b></span>';
+  }).join("");
+  var last=arr.slice(-6).reverse().map(function(s){var nota=s.pt!=null?(s.pt+'/'+s.mp+' pts · '+s.p+'%'):(s.a+'/'+s.n+' ('+s.p+'%)');return '<li>'+s.d+' · '+s.l+' — <b>'+nota+'</b></li>';}).join("");
+  var f=window.DMAE_fraca?window.DMAE_fraca(arr):null;
+  var focoD=f?'<p class="dhint" style="margin:0 0 8px">🎯 Matéria mais fraca: <b>'+f.mat+'</b> ('+f.pct+'%) — foque nela.</p>':'';
+  host.innerHTML='<div class="dbest"><span class="dlbl">Melhor nota:</span> '+bestHTML+'</div>'+focoD+'<p class="dhint" style="margin:0 0 8px">✅ = atingiu o mínimo de 30 pontos do edital.</p><ol class="dlast">'+last+'</ol><button class="btn ghost dclear" type="button">Limpar histórico</button>';
+  host.querySelector(".dclear").onclick=function(){try{localStorage.removeItem(window.DMAE_KEY("scores"));}catch(e){}window.renderDesempenho();};
+};
+
+(function(){
+  var box=document.getElementById("sim"),html="";
+  SIM.forEach(function(q,i){
+    if(q.b){html+='<div class="blocklabel">'+q.b+'</div>';}
+    if(q.passage){html+='<div class="passage">'+q.passage+'</div>';}
+    if(q.n){
+      html+='<div class="q" data-i="'+i+'" id="simq'+q.n+'"><div class="qn">Questão '+q.n+'</div><div class="qt">'+q.t+'</div>';
+      "ABCD".split("").forEach(function(L,j){
+        html+='<label class="opt"><input type="radio" name="q'+q.n+'" value="'+j+'"><span class="lt">'+L+')</span><span>'+q.o[j]+'</span></label>';
+      });
+      html+='<div class="expl"><b>Gabarito: '+"ABCD"[q.c]+'.</b> '+q.e+'</div></div>';
+    }
+  });
+  box.innerHTML=html;
+  var total=SIM.filter(function(q){return q.n;}).length;
+  window.__SIM1=SIM.filter(function(q){return q.t;}).map(function(q){return {t:q.t,o:q.o,c:q.c,e:q.e};});
+
+  var LT="ABCD".split("");
+  document.getElementById("corrigir").onclick=function(){
+    var acertos=0, errs=[], cadErrs=[], pts=0, maxpts=0, byMat={}, curMat="";
+    SIM.forEach(function(q){
+      if(q.b){curMat=q.b.replace(/\s*\(.*\)\s*/,"");return;}
+      if(!q.n)return;
+      var qd=document.getElementById('simq'+q.n);
+      if(!qd)return;
+      var opts=qd.querySelectorAll('.opt');
+      var sel=qd.querySelector('input:checked');
+      opts.forEach(function(o){o.classList.remove('right','wrong');});
+      opts[q.c].classList.add('right');
+      var acertou=false;
+      if(sel){var v=+sel.value; if(v===q.c){acertos++;acertou=true;} else {opts[v].classList.add('wrong');}}
+      qd.querySelector('.expl').classList.add('show');
+      var w=/específ/i.test(curMat)?2:1; maxpts+=w; byMat[curMat]=byMat[curMat]||{ok:0,tot:0}; byMat[curMat].tot++;
+      if(acertou){pts+=w;byMat[curMat].ok++;}
+      if(!acertou){
+        errs.push({n:q.n,anchor:'simq'+q.n,qt:q.t,you:sel?LT[+sel.value]:'',correct:LT[q.c],expl:q.e});
+        cadErrs.push({label:"Simulado 1",t:q.t,o:q.o,c:q.c,e:q.e});
+      }
+    });
+    var pct=Math.round(acertos/total*100);
+    var zeros=Object.keys(byMat).filter(function(m){return byMat[m].ok===0;});
+    var st=zeros.length?('<b style="color:var(--red)">⚠️ Você zerou: '+zeros.join(", ")+'</b> — no critério do edital, zerar qualquer conteúdo reprova.'):(pts>=Math.round(maxpts*0.6)?'<b style="color:var(--green)">✅ Você atingiu 60% dos pontos deste simulado e não zerou — no ritmo de aprovação (a prova exige mín. 30 de 50 e sem zerar).</b> Agora suba a nota!':'<b>Abaixo de 60% dos pontos.</b> A prova pede no mínimo 30 de 50 — reveja os erros abaixo.');
+    document.getElementById("scorebox").innerHTML='Nota: <b>'+pts+'</b>/'+maxpts+' pontos · '+acertos+'/'+total+' acertos ('+pct+'%).<br>'+st;
+    window.renderErrPanel(document.getElementById("simulado"),document.querySelector("#simulado .simbar"),errs,total);
+    window.recordScore("sim1","Simulado 1",pct,acertos,total,pts,maxpts,byMat);
+    if(window.saveErrors)window.saveErrors(cadErrs);
+  };
+  document.getElementById("limpar").onclick=function(){
+    box.querySelectorAll('input:checked').forEach(function(i){i.checked=false;});
+    box.querySelectorAll('.opt').forEach(function(o){o.classList.remove('right','wrong');});
+    box.querySelectorAll('.expl').forEach(function(e){e.classList.remove('show');});
+    document.getElementById("scorebox").textContent='';
+    var ep=document.getElementById("simulado-errpanel"); if(ep)ep.parentNode.removeChild(ep);
+  };
+  window.attachTimer(document.querySelector("#simulado .simbar"),180);
+})();
+if(window.renderDesempenho)window.renderDesempenho();
+if(window.renderProxima)window.renderProxima();
+
+/* ---------- FLASHCARDS ---------- */
+var FC=[
+["Quantas questões tem a prova?","50 questões de múltipla escolha, 2 pontos cada = 100 pontos."],
+["Quais disciplinas?","Português/Interpretação, Literatura, Inglês, Noções de Direito e DH, Raciocínio Lógico-Matemático."],
+["O que mais pesa?","Língua Portuguesa (mais questões) e depois Raciocínio Lógico-Matemático."],
+["Obras de Literatura (2025)","'Campo Geral' (Guimarães Rosa) e 'Vidas Secas' (Graciliano Ramos)."],
+["Protagonista de Campo Geral","Miguilim."],
+["Cadela de Vidas Secas","Baleia (família de Fabiano e sinhá Vitória)."],
+["Função da PM (art. 144)","Policiamento ostensivo e preservação da ordem pública; subordinada ao Governador."],
+["Forças Armadas (art. 142)","Defesa da Pátria e garantia dos poderes constitucionais."],
+["Vedação aos militares","Sindicalização e greve são proibidas."],
+["Casa é inviolável (art. 5º)","Entra sem consentimento só em flagrante/desastre/socorro; de dia, com ordem judicial."],
+["Direito é absoluto?","Nenhum direito fundamental é absoluto."],
+["LINDB - desconhecer a lei","Ninguém se escusa de cumprir a lei alegando que não a conhece."],
+["Vacatio legis padrao","45 dias, salvo disposição em contrário."],
+["DUDH","Declaração Universal dos Direitos Humanos - ONU, 1948; direitos universais."],
+["Pacto de San José","Convenção Americana sobre Direitos Humanos (1969, OEA)."],
+["LIMPE","Legalidade, Impessoalidade, Moralidade, Publicidade, Eficiência (art. 37)."],
+["Brasileiro nato x naturalizado","Alguns cargos são privativos de nato (ex.: oficial das Forças Armadas)."],
+["Negação de 'se p então q'","'p e não q' (equivalente = contrapositiva '~q->~p')."],
+["De Morgan","~(p e q) = ~p ou ~q; ~(p ou q) = ~p e ~q."],
+["Silogismo","De premissas verdadeiras, a conclusão válida decorre logicamente."],
+["Mediana","Valor central com os dados ORDENADOS (par: média dos dois centrais)."],
+["Aumentos sucessivos","Multiplicam os fatores: +10% e +20% = +32%."],
+["Regra de três inversa","Grandezas em direções opostas: mais recursos, menos tempo."],
+["Função a>0","Parábola com concavidade para cima -> ponto de mínimo."],
+["Crase - teste","Troque por masculino: deu 'ao' = tem crase."],
+["'Houveram' existe?","Não nesse sentido: haver=existir é impessoal -> 'Houve'."],
+["Vírgula e sujeito","A vírgula nunca separa o sujeito do verbo."],
+["'que' relativo x integrante","Relativo retoma um nome; integrante introduz oração (espero que venha)."],
+["Falsos cognatos","actually=na verdade; library=biblioteca; pretend=fingir; push=empurrar."],
+["AFM/TAF","Avaliação física militar eliminatória - treine desde já."],
+["Estratégia no dia","Todas as questões valem igual: não deixe nada em branco; eliminando 2, chute (50%)."],
+["Segurança pública (art. 144)","Dever do Estado, direito e responsabilidade de todos."]
+];
+(function(){
+  var box=document.getElementById("fcs"),order=FC.map(function(_,i){return i;});
+  function render(){
+    box.innerHTML=order.map(function(idx,pos){
+      return '<div class="fc" data-i="'+idx+'"><div class="fn">Flashcard '+(pos+1)+'</div><div class="fq">'+FC[idx][0]+'</div><div class="fa">'+FC[idx][1]+'</div><div class="hint">toque para ver a resposta</div></div>';
+    }).join("");
+    document.getElementById("fc-count").textContent=FC.length+" cartões";
+  }
+  render();
+  box.addEventListener("click",function(e){var c=e.target.closest(".fc");if(c)c.classList.toggle("open");});
+  document.getElementById("fc-shuffle").onclick=function(){for(var i=order.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=order[i];order[i]=order[j];order[j]=t;}render();};
+  var allOpen=false;
+  document.getElementById("fc-all").onclick=function(){allOpen=!allOpen;box.querySelectorAll(".fc").forEach(function(c){c.classList.toggle("open",allOpen);});};
+})();
+</script>
+<script>
+/* ===== Motor genérico de provas/treinos (aula + questões + correção) ===== */
+(function(){
+  var L="ABCD".split("");
+  function qHTML(q,n){
+    var h='<div class="q" data-c="'+q.c+'"><div class="qn">'+(q.label?q.label:('Questão '+n))+'</div><div class="qt">'+q.t+'</div>';
+    for(var j=0;j<q.o.length;j++){h+='<label class="opt"><input type="radio"><span class="lt">'+L[j]+')</span><span>'+q.o[j]+'</span></label>';}
+    h+='<div class="expl"><b>Gabarito: '+L[q.c]+'.</b> '+q.e+'</div></div>';
+    return h;
+  }
+  function wire(host){
+    var qs=[].slice.call(host.querySelectorAll(".q"));
+    qs.forEach(function(qd,i){qd.id=host.id+"_q"+(i+1);[].forEach.call(qd.querySelectorAll("input"),function(inp){inp.name=host.id+"_"+i;});});
+    var mats=[],curMat="";
+    [].forEach.call(host.children,function(ch){
+      if(ch.classList&&ch.classList.contains("blocklabel"))curMat=ch.textContent.replace(/\s*\(.*\)\s*/,"");
+      else if(ch.classList&&ch.classList.contains("q"))mats.push(curMat);
+    });
+    var structured=host.id.indexOf("quiz-sim")===0;
+    var b=document.createElement("div"); b.className="simbar";
+    b.innerHTML='<button class="btn cor">Corrigir</button><button class="btn ghost lim">Limpar</button><span class="score sc" aria-live="polite"></span>';
+    host.appendChild(b);
+    var isSim=host.id.indexOf("quiz-")===0;
+    var simLabel=host.id==="quiz-aleatorio"?"Simulado aleatório":"Simulado "+host.id.replace("quiz-sim","");
+    if(isSim)window.attachTimer(b,180);
+    b.querySelector(".cor").onclick=function(){
+      var ac=0, errs=[], cadErrs=[], pts=0, maxpts=0, byMat={};
+      var card=host.closest(".card"), cardh3=card&&card.querySelector("h3");
+      var lbl=isSim?simLabel:(cardh3?cardh3.textContent.replace("Aula + treino: ",""):"Treino");
+      qs.forEach(function(qd,i){
+        var opts=qd.querySelectorAll(".opt"), ins=qd.querySelectorAll("input"), c=+qd.getAttribute("data-c");
+        var sel=qd.querySelector("input:checked");
+        [].forEach.call(opts,function(o){o.classList.remove("right","wrong");});
+        if(opts[c])opts[c].classList.add("right");
+        var acertou=false, v=-1;
+        if(sel){v=[].indexOf.call(ins,sel); if(v===c){ac++;acertou=true;} else if(opts[v])opts[v].classList.add("wrong");}
+        qd.querySelector(".expl").classList.add("show");
+        if(structured){var w=/específ/i.test(mats[i]||"")?2:1;maxpts+=w;var mk=mats[i]||"?";byMat[mk]=byMat[mk]||{ok:0,tot:0};byMat[mk].tot++;if(acertou){pts+=w;byMat[mk].ok++;}}
+        if(!acertou){
+          var expl=qd.querySelector(".expl").innerHTML.replace(/^\s*<b>.*?<\/b>\s*/,"");
+          errs.push({n:i+1,anchor:qd.id,qt:qd.querySelector(".qt").innerHTML,you:v>=0?L[v]:"",correct:L[c],expl:expl});
+          var oarr=[].map.call(opts,function(o){var sp=o.querySelectorAll("span");return sp[sp.length-1].innerHTML;});
+          cadErrs.push({label:lbl,t:qd.querySelector(".qt").innerHTML,o:oarr,c:c,e:expl});
+        }
+      });
+      var pct=Math.round(ac/qs.length*100);
+      if(structured){
+        var zeros=Object.keys(byMat).filter(function(m){return byMat[m].ok===0;});
+        var st=zeros.length?('<b style="color:var(--red)">⚠️ Você zerou: '+zeros.join(", ")+'</b> — no critério do edital, zerar qualquer conteúdo reprova.'):(pts>=Math.round(maxpts*0.6)?'<b style="color:var(--green)">✅ Você atingiu 60% dos pontos deste simulado e não zerou — no ritmo de aprovação (a prova exige mín. 30 de 50 e sem zerar).</b> Agora suba a nota!':'<b>Abaixo de 60% dos pontos.</b> A prova pede no mínimo 30 de 50 — reveja os erros abaixo.');
+        b.querySelector(".sc").innerHTML="Nota: <b>"+pts+"</b>/"+maxpts+" pontos · "+ac+"/"+qs.length+" acertos ("+pct+"%).<br>"+st;
+      } else {
+        var msg=pct>=70?"Ótimo!":pct>=50?"Bom — revise os erros abaixo.":"Releia a aula e veja os erros abaixo.";
+        b.querySelector(".sc").innerHTML="Acertos: <b>"+ac+"</b>/"+qs.length+" ("+pct+"%). "+msg;
+      }
+      window.renderErrPanel(host,b,errs,qs.length);
+      if(isSim)window.recordScore(host.id,simLabel,pct,ac,qs.length,structured?pts:null,structured?maxpts:null,structured?byMat:null);
+      if(host.id!=="caderno-list"&&window.saveErrors)window.saveErrors(cadErrs);
+    };
+    b.querySelector(".lim").onclick=function(){
+      host.querySelectorAll("input:checked").forEach(function(i){i.checked=false;});
+      host.querySelectorAll(".opt").forEach(function(o){o.classList.remove("right","wrong");});
+      host.querySelectorAll(".expl").forEach(function(e){e.classList.remove("show");});
+      b.querySelector(".sc").textContent="";
+      var ep=document.getElementById(host.id+"-errpanel"); if(ep)ep.parentNode.removeChild(ep);
+    };
+  }
+  function mountList(host,items){ // items: {b},{passage},{t,o,c,e}
+    var h="",n=0;
+    items.forEach(function(q){
+      if(q.b)h+='<div class="blocklabel">'+q.b+'</div>';
+      if(q.passage)h+='<div class="passage">'+q.passage+'</div>';
+      if(q.t){n++;h+=qHTML(q,n);}
+    });
+    host.innerHTML=h; wire(host);
+  }
+  function mountQs(host,qs){var h="";qs.forEach(function(q,i){h+=qHTML(q,i+1);});host.innerHTML=h;wire(host);}
+
+  /* ===== Caderno de erros (salvo no navegador) ===== */
+  window.saveErrors=function(list){
+    if(!list||!list.length)return;
+    var K=window.DMAE_KEY("cadernoerros"),arr=[];
+    try{arr=JSON.parse(localStorage.getItem(K)||"[]");}catch(e){}
+    var seen={};arr.forEach(function(x){seen[x.id]=1;});
+    list.forEach(function(it){
+      var id=it.label+"§"+it.t;
+      if(!seen[id]){arr.push({id:id,label:it.label,t:it.t,o:it.o,c:it.c,e:it.e});seen[id]=1;}
+    });
+    if(arr.length>200)arr=arr.slice(-200);
+    try{localStorage.setItem(K,JSON.stringify(arr));}catch(e){}
+    if(window.renderCaderno)window.renderCaderno();
+    if(window.DMAE_syncPush)window.DMAE_syncPush();
+  };
+  window.renderCaderno=function(){
+    var host=document.getElementById("caderno-list");if(!host)return;
+    var arr=[];try{arr=JSON.parse(localStorage.getItem(window.DMAE_KEY("cadernoerros"))||"[]");}catch(e){}
+    var cnt=document.getElementById("cad-count");if(cnt)cnt.textContent=arr.length?("· "+arr.length):"";
+    if(!arr.length){host.innerHTML='<p class="dhint">Seu caderno está vazio. Assim que você errar questões nos simulados ou treinos, elas aparecem aqui para você refazer.</p>';if(window.renderProxima)window.renderProxima();return;}
+    mountQs(host,arr);
+    if(window.renderProxima)window.renderProxima();
+  };
+  (function(){
+    var rm=document.getElementById("cad-remove"),cl=document.getElementById("cad-clear");
+    if(rm)rm.onclick=function(){
+      var arr=[];try{arr=JSON.parse(localStorage.getItem(window.DMAE_KEY("cadernoerros"))||"[]");}catch(e){}
+      var qs=document.querySelectorAll("#caderno-list .q");
+      if(!arr.length||qs.length!==arr.length){window.renderCaderno();return;}
+      var keep=[];
+      [].forEach.call(qs,function(qd,i){
+        var ins=qd.querySelectorAll("input"),sel=qd.querySelector("input:checked");
+        var ok=sel&&[].indexOf.call(ins,sel)===+qd.getAttribute("data-c");
+        if(!ok)keep.push(arr[i]);
+      });
+      try{localStorage.setItem(window.DMAE_KEY("cadernoerros"),JSON.stringify(keep));}catch(e){}
+      window.renderCaderno();
+      if(window.DMAE_syncPush)window.DMAE_syncPush();
+      var host=document.getElementById("caderno");if(host)host.scrollIntoView({behavior:"smooth",block:"start"});
+    };
+    if(cl)cl.onclick=function(){
+      if(!confirm("Apagar todas as questões do caderno de erros?"))return;
+      try{localStorage.removeItem(window.DMAE_KEY("cadernoerros"));}catch(e){}
+      window.renderCaderno();
+      if(window.DMAE_syncPush)window.DMAE_syncPush();
+    };
+    var dl=document.getElementById("cad-download");
+    if(dl)dl.onclick=function(){
+      var arr=[];try{arr=JSON.parse(localStorage.getItem(window.DMAE_KEY("cadernoerros"))||"[]");}catch(e){}
+      if(!arr.length){alert("Seu caderno está vazio — faça um simulado ou treino primeiro.");return;}
+      var LL="ABCD".split("");
+      var body=arr.map(function(q,i){
+        var opts=q.o.map(function(o,j){return '<div>'+LL[j]+') '+o+'</div>';}).join("");
+        return '<div class="q"><p><b>'+(i+1)+'. ['+q.label+']</b> '+q.t+'</p><div class="o">'+opts+'</div><div class="a"><b>Gabarito: '+LL[q.c]+'.</b> '+q.e+'</div></div>';
+      }).join("");
+      var html='<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>Caderno de erros - PM-MG</title>'
+        +'<style>body{font-family:Arial,Helvetica,sans-serif;max-width:820px;margin:24px auto;padding:0 18px;color:#111;line-height:1.5}'
+        +'h1{font-size:20px} .q{border-bottom:1px solid #ccc;padding:12px 0} .o div{margin:2px 0} '
+        +'.a{background:#eef2f4;padding:8px 10px;border-radius:6px;margin-top:6px;font-size:14px}</style></head>'
+        +'<body><h1>Meu caderno de erros — DMAE 2026 ('+arr.length+' questões)</h1>'
+        +'<p>Refaça cada uma tapando o gabarito; leia a explicação só depois de responder.</p>'+body+'</body></html>';
+      try{
+        var blob=new Blob([html],{type:"text/html;charset=utf-8"});
+        var url=URL.createObjectURL(blob);
+        var a=document.createElement("a");a.href=url;a.download="caderno-de-erros-dmae.html";
+        document.body.appendChild(a);a.click();document.body.removeChild(a);
+        setTimeout(function(){URL.revokeObjectURL(url);},3000);
+      }catch(e){alert("Não foi possível baixar neste navegador.");}
+    };
+    window.renderCaderno();
+  })();
+
+  /* ===================== SIMULADO 2 ===================== */
+  var SIM2=[
+{b:"Língua Portuguesa e Interpretação"},
+{t:"Assinale a alternativa SEM crase.",o:["Entreguei o relatório à comandante.","Ele se referiu à norma.","Estou disposto à cooperar.","Compareceu à formatura."],c:2,e:"Não há crase antes de verbo (“a cooperar”)."},
+{t:"Assinale a frase correta quanto à regência.",o:["Assisti o filme sobre a corporação.","Obedeço às ordens superiores.","Prefiro treinar do que descansar.","Cheguei no quartel cedo."],c:1,e:"“Obedecer a algo” (TI): obedeço às ordens. Assistir(ver)=assistir A; “preferir X a Y”; “chegar a/ao”."},
+{t:"A oração em \"Os soldados, que treinaram, passaram\" é:",o:["Restritiva (só alguns).","Explicativa (todos treinaram e passaram).","Objetiva direta.","Adverbial."],c:1,e:"Entre vírgulas = explicativa (todos). Sem vírgula seria restritiva."},
+{t:"Acentuação conforme o Novo Acordo, assinale a correta.",o:["idéia","assembléia","heroico","vôo"],c:2,e:"“Heroico” não tem acento. As demais são grafias antigas."},
+{t:"A palavra “felizmente” é formada por:",o:["Parassíntese.","Derivação sufixal.","Composição.","Derivação regressiva."],c:1,e:"“Feliz” + “-mente” (sufixo) = derivação sufixal."},
+{t:"Em “Comprou pão, leite e café”, as vírgulas separam:",o:["Sujeito do verbo.","Elementos de uma enumeração.","Oração explicativa.","Vocativo."],c:1,e:"Vírgula em enumeração/lista."},
+{b:"Raciocínio Lógico-Matemático"},
+{t:"A negação de “Algum policial faltou” é:",o:["Todos faltaram.","Nenhum policial faltou.","Algum não faltou.","Muitos faltaram."],c:1,e:"Negar “algum” leva a “nenhum”."},
+{t:"Uma comissão de 2 entre 4 pessoas pode ser formada de (ordem não importa):",o:["8 modos.","6 modos.","12 modos.","4 modos."],c:1,e:"C(4,2)=6."},
+{t:"A tabela-verdade de uma proposição com 3 variáveis simples tem:",o:["6 linhas.","8 linhas.","9 linhas.","3 linhas."],c:1,e:"2³ = 8."},
+{t:"Um item de R$ 120 com 25% de desconto sai por:",o:["R$ 90","R$ 95","R$ 100","R$ 96"],c:0,e:"120 × 0,75 = 90."},
+{t:"A média de 10, 20, 30, 40 é:",o:["20","25","30","22"],c:1,e:"(10+20+30+40)/4 = 25."},
+{b:"Noções de Direito e Direitos Humanos"},
+{t:"São cargos privativos de brasileiro NATO, entre outros:",o:["Vereador.","Oficial das Forças Armadas.","Delegado de polícia.","Professor."],c:1,e:"A CF reserva a nato cargos como oficial das Forças Armadas, Presidente etc."},
+{t:"O princípio da administração pública que exige tratamento sem favorecimento é:",o:["Publicidade.","Impessoalidade.","Eficiência.","Legalidade."],c:1,e:"Impessoalidade veda favorecimento pessoal."},
+{t:"A Convenção Americana sobre Direitos Humanos também é conhecida como:",o:["Declaração de Viena.","Pacto de San José da Costa Rica.","Carta da ONU.","Convenção de Genebra."],c:1,e:"Pacto de San José (1969, OEA)."},
+{t:"Sobre a Polícia Militar, é correto afirmar que ela é:",o:["Subordinada ao Governador do Estado.","Órgão da União.","Polícia judiciária.","Independente dos Poderes."],c:0,e:"As PMs são subordinadas aos Governadores dos Estados (art. 144, §6º)."},
+{t:"A LINDB trata, entre outros temas, de:",o:["Regras de trânsito.","Vigência e aplicação das leis no tempo e espaço.","Direito penal militar.","Estatuto do idoso."],c:1,e:"LINDB: vigência, obrigatoriedade, integração e aplicação das normas."},
+{b:"Literatura e Inglês"},
+{t:"“Vidas Secas” pertence a qual movimento/geração literária?",o:["Romantismo.","Modernismo (romance de 30, 2ª fase).","Barroco.","Parnasianismo."],c:1,e:"“Vidas Secas” é do Modernismo (2ª fase, romance de 30)."},
+{t:"Em “Campo Geral”, um marco para Miguilim é:",o:["Tornar-se soldado.","Ganhar óculos e enxergar melhor o mundo.","Mudar-se para a cidade grande.","Herdar uma fazenda."],c:1,e:"Miguilim passa a enxergar melhor ao ganhar óculos — momento simbólico."},
+{t:"“He pretended to be calm.” — “pretended” significa:",o:["pretendeu.","fingiu.","preparou.","apresentou."],c:1,e:"“Pretend” = fingir (falso cognato)."},
+{t:"“Read the text and answer.” O comando pede para:",o:["escrever um texto.","ler o texto e responder.","traduzir palavra por palavra.","ignorar o texto."],c:1,e:"“Read... and answer” = leia e responda."}
+];
+  mountList(document.getElementById("quiz-sim2"),SIM2);
+
+  /* ===================== SIMULADO 3 ===================== */
+  var SIM3=[
+{b:"Língua Portuguesa e Interpretação"},
+{t:"Assinale a concordância correta.",o:["Fazem dois anos que ingressei.","Precisa-se de soldados.","Aluga-se salas.","Houveram convocações."],c:1,e:"“Precisa-se de” (verbo no singular). “Faz dois anos”; “alugam-se salas”; “houve convocações”."},
+{t:"Em “Vendem-se imóveis”, o “se” é:",o:["Índice de indeterminação do sujeito.","Partícula apassivadora (imóveis são vendidos).","Objeto direto.","Conjunção."],c:1,e:"Voz passiva sintética; o verbo concorda com “imóveis” (plural)."},
+{t:"O conectivo “portanto” exprime:",o:["Causa.","Conclusão.","Concessão.","Condição."],c:1,e:"“Portanto/logo” = conclusão."},
+{t:"Em “amor à pátria”, o termo “à pátria” é:",o:["Adjunto adnominal.","Complemento nominal.","Objeto direto.","Aposto."],c:1,e:"Completa o nome “amor” → complemento nominal."},
+{t:"Assinale a alternativa com o imperativo correto (você).",o:["Faça o exercício e entregue.","Faz o exercício e entrega (norma-padrão).","Fazei o exercício.","Faças o exercício."],c:0,e:"Imperativo de “você”: faça, entregue."},
+{b:"Raciocínio Lógico-Matemático"},
+{t:"A negação de “Se estudo, então passo” é:",o:["Se não estudo, não passo.","Estudo e não passo.","Passo e não estudo.","Não estudo ou passo."],c:1,e:"~(p→q)=p∧~q."},
+{t:"A probabilidade de sair cara ao lançar uma moeda honesta é:",o:["1/4","1/3","1/2","2/3"],c:2,e:"1 em 2 = 1/2."},
+{t:"Um silogismo válido: “Todo policial é servidor; João é policial; logo:”",o:["João não é servidor.","João é servidor.","Todo servidor é policial.","Nada se conclui."],c:1,e:"Dedução válida: João é servidor."},
+{t:"Área de um quadrado de lado 5 cm:",o:["10 cm²","20 cm²","25 cm²","15 cm²"],c:2,e:"5² = 25 cm²."},
+{t:"Resolva: 2x + 6 = 20. x vale:",o:["6","7","8","5"],c:1,e:"2x = 14 → x = 7."},
+{b:"Noções de Direito e Direitos Humanos"},
+{t:"A casa é asilo inviolável; durante a noite, pode-se entrar sem consentimento:",o:["com mandado, a qualquer hora.","apenas em flagrante, desastre ou para socorro.","sempre que a polícia quiser.","nunca."],c:1,e:"À noite: só flagrante/desastre/socorro; de dia, também com ordem judicial (art. 5º, XI)."},
+{t:"São fundamentos da República Federativa do Brasil (art. 1º), EXCETO:",o:["Soberania.","Cidadania.","Dignidade da pessoa humana.","Expansão territorial."],c:3,e:"Expansão territorial não é fundamento; os fundamentos incluem soberania, cidadania, dignidade, valores sociais do trabalho e pluralismo político."},
+{t:"A PM exerce policiamento ostensivo. Isso significa atuação:",o:["secreta e investigativa.","visível, preventiva e de manutenção da ordem.","exclusivamente judicial.","de defesa das fronteiras."],c:1,e:"Ostensivo = visível/preventivo, para manter a ordem pública."},
+{t:"Direitos Humanos, segundo a DUDH, caracterizam-se por serem:",o:["exclusivos de alguns.","universais (para todas as pessoas).","temporários.","concedidos pelo Estado por mérito."],c:1,e:"São universais — de todas as pessoas."},
+{t:"Sobre a vigência da lei (LINDB), salvo disposição em contrário, a lei começa a vigorar:",o:["na data da sanção.","45 dias após a publicação (no país).","imediatamente sempre.","após 1 ano."],c:1,e:"Vacatio legis padrão: 45 dias no Brasil, salvo disposição em contrário."},
+{b:"Literatura e Inglês"},
+{t:"O tema central de “Vidas Secas” é:",o:["a vida na corte.","a seca e a miséria no sertão nordestino.","a revolução industrial.","o amor romântico idealizado."],c:1,e:"Seca, miséria e desumanização no sertão."},
+{t:"“Campo Geral” foi escrito por:",o:["Graciliano Ramos.","João Guimarães Rosa.","Machado de Assis.","Jorge Amado."],c:1,e:"Guimarães Rosa (que também escreveu “Grande Sertão: Veredas”)."},
+{t:"“I go to school every day.” O tempo verbal é:",o:["passado.","presente (rotina).","futuro.","condicional."],c:1,e:"Presente simples (rotina)."},
+{t:"“Bookstore” em português é:",o:["biblioteca.","livraria.","caderno.","estante."],c:1,e:"“Bookstore” = livraria (library = biblioteca)."}
+];
+  mountList(document.getElementById("quiz-sim3"),SIM3);
+
+  /* ===================== SIMULADO 4 ===================== */
+  var SIM4=[
+{b:"Língua Portuguesa e Interpretação"},
+{t:"Assinale a frase corretamente pontuada.",o:["O soldado, apresentou-se ao comandante.","Apresentado o relatório, o oficial decidiu.","A tropa, marchou em ordem.","Estudou muito, e passou."],c:1,e:"Reduzida anteposta pede vírgula. A/C: vírgula entre sujeito e verbo. D: sem vírgula (mesmo sujeito)."},
+{t:"Em “Ele agiu conforme o regulamento”, “conforme” indica:",o:["oposição.","conformidade.","condição.","finalidade."],c:1,e:"“Conforme” = de acordo com (conformidade)."},
+{t:"Assinale a forma verbal correta.",o:["Quando ele ver a ordem, cumprirá.","Quando ele vir a ordem, cumprirá.","Se ele ver o edital, assina.","Quando eu ver, aviso."],c:1,e:"Futuro do subjuntivo de “ver” = “vir”: “quando ele vir”."},
+{t:"“Ele é rápido como um raio” é exemplo de:",o:["metáfora.","comparação (símile).","metonímia.","antítese."],c:1,e:"Com “como” explícito = comparação/símile."},
+{t:"O sujeito de “Choveu muito ontem” é:",o:["“muito”.","“ontem”.","inexistente (oração sem sujeito).","“chuva”."],c:2,e:"Verbo que indica fenômeno da natureza é impessoal → oração sem sujeito."},
+{b:"Raciocínio Lógico-Matemático"},
+{t:"Regra de três: 5 operários fazem em 8 dias; 10 operários (mesmo ritmo) fazem em:",o:["16 dias","4 dias","5 dias","2 dias"],c:1,e:"Inversamente proporcional: 5×8 = 10×x → x = 4."},
+{t:"A disjunção “p ou q” (inclusiva) é FALSA quando:",o:["ambas são verdadeiras.","p é verdadeira e q falsa.","ambas são falsas.","p é falsa e q verdadeira."],c:2,e:"O “ou” inclusivo só é falso com ambas falsas."},
+{t:"40% de um valor é R$ 80. O valor é:",o:["R$ 160","R$ 200","R$ 120","R$ 240"],c:1,e:"0,40·x = 80 → x = 200."},
+{t:"O próximo termo de 2, 4, 8, 16, ... (PG de razão 2) é:",o:["18","24","32","20"],c:2,e:"×2 → 32."},
+{t:"Numa sala, 30 gostam de futebol, 20 de vôlei e 8 dos dois. Ao menos um esporte:",o:["42","50","58","38"],c:0,e:"30+20−8 = 42."},
+{b:"Noções de Direito e Direitos Humanos"},
+{t:"As Forças Armadas destinam-se, entre outros, à:",o:["polícia ostensiva estadual.","defesa da Pátria e garantia dos poderes constitucionais.","investigação criminal.","fiscalização de trânsito."],c:1,e:"CF, art. 142: defesa da Pátria, garantia dos poderes e da lei e da ordem."},
+{t:"Aos militares é vedado:",o:["votar.","sindicalizar-se e fazer greve.","ter hierarquia.","usar farda."],c:1,e:"CF veda sindicalização e greve aos militares."},
+{t:"O princípio da legalidade, para o servidor público, significa:",o:["fazer tudo o que a lei não proíbe.","fazer somente o que a lei autoriza.","agir sem limites.","criar as próprias regras."],c:1,e:"Legalidade administrativa: só o que a lei autoriza."},
+{t:"A DUDH e a Convenção Americana orientam a atuação policial no sentido de:",o:["ignorar direitos de suspeitos.","respeitar a dignidade e usar a força de forma proporcional.","usar força ilimitada.","dispensar a legalidade."],c:1,e:"DH orientam o respeito à dignidade e o uso proporcional da força."},
+{t:"Segundo a CF, a segurança pública é dever do Estado e:",o:["responsabilidade apenas da União.","direito e responsabilidade de todos.","exclusiva das Forças Armadas.","facultativa."],c:1,e:"Art. 144: dever do Estado, direito e responsabilidade de todos."},
+{b:"Literatura e Inglês"},
+{t:"Em “Vidas Secas”, Fabiano e a família enfrentam principalmente:",o:["a vida urbana e o consumo.","a seca e a fuga em busca de sobrevivência.","uma guerra estrangeira.","a corte imperial."],c:1,e:"A seca e a busca por sobrevivência."},
+{t:"“Campo Geral” e “Grande Sertão: Veredas” são obras de:",o:["Graciliano Ramos.","João Guimarães Rosa.","Carlos Drummond.","José de Alencar."],c:1,e:"Ambas de Guimarães Rosa."},
+{t:"“She works at a hospital.” — o texto informa que ela:",o:["estuda em um hospital.","trabalha em um hospital.","mora perto do hospital.","construiu um hospital."],c:1,e:"“Works at a hospital” = trabalha em um hospital."},
+{t:"O falso cognato “push”, numa porta, significa:",o:["puxe.","empurre.","pare.","entre."],c:1,e:"“Push” = empurre (pull = puxe)."}
+];
+  mountList(document.getElementById("quiz-sim4"),SIM4);
+
+  /* ===================== TREINOS (aula + questões) ===================== */
+  var TREINOS=[
+  {mat:"Língua Portuguesa",titulo:"Aula + treino: Crase",aula:"Crase é a fusão da preposição <b>a</b> com o artigo <b>a(s)</b>, só diante de palavra <b>feminina</b>. <b>Teste:</b> troque por uma palavra masculina — se surgir <b>“ao”</b>, tem crase. <b>Sempre tem:</b> às vezes, à noite, à vista, à medida que, às 8h. <b>Nunca tem:</b> antes de verbo, de masculino, de pronome (a você) e de cidade sem artigo.",qs:[
+    {t:"Assinale a crase correta.",o:["Ele se dedica à corporação.","Cheguei à pé.","Refiro-me à ela.","Fui à cavalo."],c:0,e:"“Dedicar-se a” + fem. = à. As demais: verbo/pronome/masculino sem crase."},
+    {t:"Assinale a frase SEM erro de crase.",o:["Pague à vista.","Fui à São Paulo.","Estou disposto à ajudar.","Refiro-me à Vossa Excelência."],c:0,e:"“À vista” é locução feminina. Erros: cidade sem artigo, antes de verbo, pronome de tratamento."},
+    {t:"Onde NÃO há crase?",o:["Obedeço à lei.","Vou a reuniões.","Entreguei à secretária.","Assisti à formatura."],c:1,e:"“A reuniões” (plural sem artigo definido) — sem crase."},
+    {t:"Assinale a correta.",o:["Assisti à sessão solene.","Assisti a sessão (crase proibida).","Assisti na sessão.","Assisti pela sessão."],c:0,e:"“Assistir” (presenciar) = TI (assistir A) + fem. → à sessão."}
+  ]},
+  {mat:"Língua Portuguesa",titulo:"Aula + treino: Concordância verbal",aula:"O verbo concorda com o sujeito. <b>Impessoais no singular:</b> <i>haver</i>(=existir) e <i>fazer</i>(=tempo). <b>Existir</b> concorda. Na voz passiva sintética o verbo concorda com o sujeito (“Vendem-se casas”).",qs:[
+    {t:"Assinale a correta.",o:["Houveram muitas provas.","Fazem cinco anos.","Existem candidatos aprovados.","Aluga-se salas."],c:2,e:"“Existem candidatos”. Impessoais: “Houve”, “Faz cinco anos”, “Alugam-se salas”."},
+    {t:"Complete: “____ problemas na inscrição.”",o:["Houveram","Houve","Existiu","Fizeram"],c:1,e:"“Haver”(existir) impessoal → “Houve problemas”."},
+    {t:"Assinale a correta.",o:["Precisa-se de soldados.","Precisam-se de soldados.","Vende-se apartamentos.","Fazem calor."],c:0,e:"“Precisa-se de” (singular). “Vendem-se apartamentos”; “Faz calor”."},
+    {t:"Assinale a correta.",o:["Chegaram os aprovados.","Chegou os aprovados.","Bastam pouco esforço.","Fazem-se necessário reformas."],c:0,e:"Sujeito plural → “Chegaram”. “Basta pouco”; “Fazem-se necessárias reformas”."}
+  ]},
+  {mat:"Língua Portuguesa",titulo:"Aula + treino: Interpretação e conectivos",aula:"Interpretar = responder pelo que o texto diz (não pela sua opinião). Cada conectivo tem um valor: <b>mas</b>=oposição, <b>portanto</b>=conclusão, <b>porque</b>=causa, <b>embora</b>=concessão, <b>se</b>=condição. Reescrever só mantém o sentido se a relação continuar a mesma.",qs:[
+    {t:"A reescrita que mantém o sentido de “Embora chovesse, treinou” é:",o:["Como chovia, treinou.","Chovia; portanto, treinou.","Mesmo chovendo, treinou.","Se chovesse, treinaria."],c:2,e:"“Embora”=concessão; “mesmo chovendo” mantém."},
+    {t:"Em “Faltou porque adoeceu”, a oração destacada indica:",o:["concessão.","causa.","condição.","conclusão."],c:1,e:"“Porque” = causa."},
+    {t:"Qual indica conclusão?",o:["porque","embora","logo","caso"],c:2,e:"“Logo/portanto” = conclusão."},
+    {t:"Na interpretação, a alternativa correta:",o:["vai além do texto.","apoia-se no que o texto afirma.","é a mais bonita.","é sempre a mais longa."],c:1,e:"Ancora-se no texto."}
+  ]},
+  {mat:"Língua Portuguesa",titulo:"Aula + treino: Pontuação e sintaxe",aula:"A vírgula <b>nunca</b> separa o sujeito do verbo nem o verbo do complemento. Isola vocativo, aposto, adverbial anteposta e a adjetiva <b>explicativa</b> (entre vírgulas = todos; sem vírgula = restritiva, só alguns).",qs:[
+    {t:"Assinale a pontuação correta.",o:["O soldado, apresentou-se.","Concluída a missão, retornaram.","O comandante, ordenou recuo.","Treinou, e descansou."],c:1,e:"Reduzida anteposta pede vírgula. As demais separam sujeito/verbo ou usam vírgula indevida."},
+    {t:"“Os praças, que se destacaram, foram promovidos.” A oração é:",o:["restritiva.","explicativa (todos se destacaram).","substantiva.","adverbial."],c:1,e:"Entre vírgulas = explicativa."},
+    {t:"Assinale a correta.",o:["Solicitou, ao superior, apoio.","Solicitou ao superior apoio.","Solicitou ao superior, apoio.","Solicitou, ao superior apoio."],c:1,e:"Não se separa verbo do complemento por vírgula."},
+    {t:"A vírgula é obrigatória em:",o:["sujeito + verbo.","vocativo (“Soldados, atenção!”).","verbo + objeto.","artigo + substantivo."],c:1,e:"Vocativo é isolado por vírgula."}
+  ]},
+  {mat:"Raciocínio Lógico-Matemático",titulo:"Aula + treino: Lógica de proposições e negações",aula:"Proposição é V ou F. Conectivos: <b>e</b>(∧), <b>ou</b>(∨), <b>se...então</b>(→). <b>De Morgan:</b> ~(p∧q)=~p∨~q; ~(p∨q)=~p∧~q. <b>~(p→q)=p∧~q.</b> Equivalente de “p→q” = contrapositiva “~q→~p”. Silogismo: de premissas verdadeiras, conclusão válida.",qs:[
+    {t:"A negação de “Se estudo, então passo” é:",o:["Se não estudo, não passo.","Estudo e não passo.","Passo e não estudo.","Não estudo ou passo."],c:1,e:"~(p→q)=p∧~q."},
+    {t:"A negação de “p e q” é:",o:["não p e não q.","não p ou não q.","p ou q.","se p então q."],c:1,e:"De Morgan: ~(p∧q)=~p∨~q."},
+    {t:"O equivalente de “Se chove, molha” é:",o:["Se molha, chove.","Se não molha, não chove.","Chove e não molha.","Se não chove, não molha."],c:1,e:"Contrapositiva ~q→~p."},
+    {t:"“Todo A é B; x é A; logo:”",o:["x não é B.","x é B.","todo B é A.","nada se conclui."],c:1,e:"Silogismo válido: x é B."}
+  ]},
+  {mat:"Raciocínio Lógico-Matemático",titulo:"Aula + treino: Porcentagem, razão e proporção",aula:"Porcentagem é “de cada 100”. Aumentar 20% = ×1,20; tirar 20% = ×0,80. Aumentos sucessivos multiplicam. Regra de três: monte a proporção e veja se as grandezas são <b>diretas</b> (mesma direção) ou <b>inversas</b> (direções opostas).",qs:[
+    {t:"Dois aumentos de 10% e 20% equivalem a:",o:["30%","32%","33%","28%"],c:1,e:"1,10×1,20=1,32 → 32%."},
+    {t:"25% de 240 é:",o:["50","60","70","48"],c:1,e:"0,25×240=60."},
+    {t:"Se 4 pessoas fazem em 6 h, 8 pessoas (mesmo ritmo) fazem em:",o:["12 h","3 h","4 h","2 h"],c:1,e:"Inversa: 4×6=8×x → x=3."},
+    {t:"Um valor com 20% de desconto ficou R$ 160. O original era:",o:["R$ 180","R$ 200","R$ 190","R$ 210"],c:1,e:"160=0,80x → x=200."}
+  ]},
+  {mat:"Raciocínio Lógico-Matemático",titulo:"Aula + treino: Estatística e funções",aula:"<b>Média</b>=soma÷quantidade; <b>moda</b>=mais frequente; <b>mediana</b>=valor central com os dados <b>ordenados</b>. <b>Função afim</b> (y=ax+b) é reta; <b>quadrática</b> (y=ax²+bx+c) é parábola (a&gt;0 tem mínimo).",qs:[
+    {t:"Em 4, 8, 8, 10, 20, a mediana é:",o:["8","10","9","12"],c:0,e:"Ordenados, o central (3º) é 8."},
+    {t:"A moda de 3, 3, 5, 7, 7, 7 é:",o:["3","5","7","média"],c:2,e:"7 é o mais frequente."},
+    {t:"Na função y=2x+1, para x=3, y vale:",o:["6","7","5","8"],c:1,e:"2·3+1=7."},
+    {t:"Numa parábola y=ax²+... com a&gt;0, o vértice é ponto de:",o:["máximo.","mínimo.","inflexão.","descontinuidade."],c:1,e:"a>0 → concavidade para cima → mínimo."}
+  ]},
+  {mat:"Noções de Direito e DH",titulo:"Aula + treino: Constituição — direitos fundamentais",aula:"O <b>art. 5º</b> lista direitos de todos: igualdade, legalidade, casa inviolável, vedação ao anonimato, devido processo. <b>Nenhum direito é absoluto</b>. Fundamentos da República (art. 1º): soberania, cidadania, dignidade, valores sociais do trabalho e livre iniciativa, pluralismo político.",qs:[
+    {t:"Sobre o art. 5º, assinale a correta.",o:["Os direitos são absolutos.","A casa é inviolável, com exceções (flagrante/desastre/socorro; de dia, ordem judicial).","O anonimato é permitido.","Não alcança estrangeiros."],c:1,e:"Casa inviolável com exceções; nenhum direito é absoluto; anonimato vedado."},
+    {t:"NÃO é fundamento da República (art. 1º):",o:["soberania.","cidadania.","dignidade da pessoa humana.","expansão territorial."],c:3,e:"Expansão territorial não é fundamento."},
+    {t:"O princípio da legalidade para o Estado significa:",o:["fazer tudo que não é proibido.","fazer só o que a lei autoriza.","agir sem limites.","criar leis livremente."],c:1,e:"Legalidade administrativa."},
+    {t:"A vedação ao anonimato aparece na CF junto com:",o:["a liberdade de manifestação do pensamento.","o direito de propriedade.","a função social.","a ordem econômica."],c:0,e:"Art. 5º, IV: livre manifestação, vedado o anonimato."}
+  ]},
+  {mat:"Noções de Direito e DH",titulo:"Aula + treino: Militares, Forças Armadas e Segurança Pública",aula:"A <b>Polícia Militar</b> faz o <b>policiamento ostensivo</b> e a preservação da <b>ordem pública</b>, subordinada ao <b>Governador</b> (art. 144). As <b>Forças Armadas</b> (art. 142) defendem a Pátria e garantem os poderes. Aos <b>militares</b> são vedadas a <b>sindicalização e a greve</b>.",qs:[
+    {t:"À Polícia Militar cabe, sobretudo:",o:["a polícia judiciária.","o policiamento ostensivo e a ordem pública.","a investigação de crimes federais.","a defesa das fronteiras."],c:1,e:"PM = ostensiva/ordem pública."},
+    {t:"As PMs são subordinadas:",o:["ao Presidente.","aos Governadores dos Estados/DF.","ao STF.","à Câmara."],c:1,e:"Art. 144, §6º."},
+    {t:"Aos militares é vedado:",o:["votar.","sindicalizar-se e fazer greve.","usar uniforme.","ter patente."],c:1,e:"CF veda sindicalização e greve."},
+    {t:"As Forças Armadas destinam-se à:",o:["polícia ostensiva.","defesa da Pátria e garantia dos poderes constitucionais.","investigação criminal.","fiscalização de trânsito."],c:1,e:"Art. 142."}
+  ]},
+  {mat:"Noções de Direito e DH",titulo:"Aula + treino: LINDB e Direitos Humanos",aula:"A <b>LINDB (Lei 4.657/42)</b> rege a aplicação das leis: “ninguém se escusa de cumprir a lei alegando desconhecimento”; <b>vacatio legis</b> padrão de 45 dias; integração por analogia, costumes e princípios. Nos <b>Direitos Humanos</b>: <b>DUDH (1948, ONU)</b> — universais; <b>Convenção Americana / Pacto de San José (1969)</b>.",qs:[
+    {t:"Segundo a LINDB:",o:["pode-se alegar desconhecimento da lei.","ninguém se escusa alegando desconhecer a lei.","a lei nunca retroage.","o costume não é fonte."],c:1,e:"Art. 3º da LINDB."},
+    {t:"A vacatio legis padrão no Brasil é de:",o:["30 dias.","45 dias.","90 dias.","1 ano."],c:1,e:"45 dias, salvo disposição em contrário."},
+    {t:"A DUDH é de:",o:["1945 (OEA).","1948 (ONU).","1969 (San José).","1988 (Brasil)."],c:1,e:"ONU, 1948."},
+    {t:"A Convenção Americana de Direitos Humanos é o:",o:["Pacto de San José da Costa Rica.","Tratado de Versalhes.","Carta da ONU.","Estatuto de Roma."],c:0,e:"Pacto de San José (1969, OEA)."}
+  ]},
+  {mat:"Literatura",titulo:"Aula + treino: Campo Geral e Vidas Secas",aula:"<b>“Campo Geral”</b> (Guimarães Rosa): o menino <b>Miguilim</b> no sertão (Mutum), sua sensibilidade e a descoberta do mundo (enxerga melhor ao ganhar óculos). <b>“Vidas Secas”</b> (Graciliano Ramos, Modernismo/romance de 30): <b>Fabiano, sinhá Vitória</b>, os dois filhos e a cadela <b>Baleia</b> fugindo da seca; temas: miséria, seca, desumanização.",qs:[
+    {t:"O protagonista de “Campo Geral” é:",o:["Fabiano.","Miguilim.","Riobaldo.","Baleia."],c:1,e:"Miguilim (Guimarães Rosa)."},
+    {t:"A cadela de “Vidas Secas” chama-se:",o:["Piedade.","Baleia.","Fiel.","Sultão."],c:1,e:"Baleia."},
+    {t:"“Vidas Secas” pertence ao:",o:["Romantismo.","Modernismo (2ª fase).","Barroco.","Realismo."],c:1,e:"Modernismo, romance de 30."},
+    {t:"Os autores de “Campo Geral” e “Vidas Secas” são, respectivamente:",o:["Graciliano e Guimarães.","Guimarães Rosa e Graciliano Ramos.","Machado e Alencar.","Drummond e Bandeira."],c:1,e:"Guimarães Rosa e Graciliano Ramos."}
+  ]},
+  {mat:"Língua Inglesa",titulo:"Aula + treino: interpretação e falsos cognatos",aula:"Você precisa <b>entender</b> o texto, não “falar”. Cuidado com <b>falsos cognatos</b>: <i>actually</i>=na verdade; <i>library</i>=biblioteca; <i>pretend</i>=fingir; <i>push</i>=empurrar; <i>pull</i>=puxar; <i>parents</i>=pais.",qs:[
+    {t:"“Actually, she is a lawyer.” — “actually” =",o:["atualmente.","na verdade.","ativamente.","atualizada."],c:1,e:"Falso cognato: na verdade."},
+    {t:"“The library opens at 8.” — “library” =",o:["livraria.","biblioteca.","liberdade.","estante."],c:1,e:"Biblioteca."},
+    {t:"“Push” numa porta significa:",o:["puxe.","empurre.","pare.","entre."],c:1,e:"Push=empurre; pull=puxe."},
+    {t:"“My parents are teachers.” — “parents” =",o:["parentes.","pais (mãe e pai).","padrinhos.","primos."],c:1,e:"Parents = pais (falso cognato de 'parentes' = relatives)."}
+  ]}
+];
+
+  var tv=document.getElementById("treinos"), lastMat="";
+  TREINOS.forEach(function(tr,ti){
+    if(tr.mat!==lastMat){lastMat=tr.mat; var dv=document.createElement("h3"); dv.className="matdiv"; dv.setAttribute("data-mat",tr.mat); dv.textContent=tr.mat; tv.appendChild(dv);}
+    var card=document.createElement("div"); card.className="card"; card.style.marginTop="16px"; card.setAttribute("data-mat",tr.mat);
+    card.innerHTML='<p class="eyebrow">'+tr.mat+'</p><h3 style="margin-top:0">'+tr.titulo+'</h3><div class="aula">'+tr.aula+'</div><div class="tq" id="treino-'+ti+'"></div>';
+    tv.appendChild(card);
+    mountQs(document.getElementById("treino-"+ti),tr.qs);
+  });
+
+  /* filtro por matéria */
+  var mats=["Todos"]; TREINOS.forEach(function(t){if(mats.indexOf(t.mat)<0)mats.push(t.mat);});
+  var mf=document.getElementById("matfilter");
+  mf.innerHTML=mats.map(function(m,i){return '<button class="'+(i===0?"on":"")+'" data-m="'+m+'">'+m+'</button>';}).join("");
+  mf.addEventListener("click",function(e){
+    var b=e.target.closest("button"); if(!b)return;
+    [].forEach.call(mf.children,function(x){x.classList.remove("on");}); b.classList.add("on");
+    var m=b.getAttribute("data-m");
+    [].forEach.call(tv.children,function(c){c.style.display=(m==="Todos"||c.getAttribute("data-mat")===m)?"":"none";});
+  });
+
+  /* Banco de questões + Simulado aleatório */
+  var BANK=[];
+  [SIM2,SIM3,SIM4].forEach(function(S){S.forEach(function(q){if(q.t)BANK.push({t:q.t,o:q.o,c:q.c,e:q.e});});});
+  TREINOS.forEach(function(tr){tr.qs.forEach(function(q){BANK.push({t:q.t,o:q.o,c:q.c,e:q.e});});});
+  if(window.__SIM1)window.__SIM1.forEach(function(q){BANK.push(q);});
+  var agBtn=document.getElementById("aleatorio-gerar");
+  if(agBtn)agBtn.onclick=function(){
+    var pool=BANK.slice();
+    for(var i=pool.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=pool[i];pool[i]=pool[j];pool[j]=t;}
+    mountList(document.getElementById("quiz-aleatorio"),pool.slice(0,Math.min(40,pool.length)));
+    agBtn.textContent="Gerar outras 40 questões";
+    var s=document.getElementById("aleatorio"); if(s)s.scrollIntoView({behavior:"smooth",block:"start"});
+  };
+
+  /* Banco só de Conhecimentos Específicos */
+  var BANK_ESPEC=[];
+  TREINOS.forEach(function(tr){if(tr.mat==="Língua Portuguesa")tr.qs.forEach(function(q){BANK_ESPEC.push({t:q.t,o:q.o,c:q.c,e:q.e});});});
+  [SIM2,SIM3,SIM4].forEach(function(S){S.filter(function(q){return q.t;}).slice(-10).forEach(function(q){BANK_ESPEC.push({t:q.t,o:q.o,c:q.c,e:q.e});});});
+  if(window.__SIM1)window.__SIM1.slice(-10).forEach(function(q){BANK_ESPEC.push(q);});
+  var egBtn=document.getElementById("espec-gerar");
+  if(egBtn)egBtn.onclick=function(){
+    var pool=BANK_ESPEC.slice();
+    for(var i=pool.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=pool[i];pool[i]=pool[j];pool[j]=t;}
+    mountQs(document.getElementById("espec-list"),pool.slice(0,Math.min(10,pool.length)));
+    egBtn.textContent="Gerar outras 10 de Português";
+    var s=document.getElementById("especifico"); if(s)s.scrollIntoView({behavior:"smooth",block:"start"});
+  };
+})();
+</script>
+<script>
+/* ===== Sincronização do progresso com a nuvem (Supabase) ===== */
+window.DMAE_syncPull=async function(){
+  if(!window.sb)return;
+  var uid="";try{uid=localStorage.getItem("dmae:uid")||"";}catch(e){}
+  if(!uid)return;
+  try{
+    var r=await window.sb.from("progress").select("data").eq("user_id",uid).eq("slug",window.DMAE_SLUG||"dmae").maybeSingle();
+    if(r.error)return;
+    if(r.data&&r.data.data){
+      var d=r.data.data;
+      try{
+        if(d.scores)localStorage.setItem(window.DMAE_KEY("scores"),JSON.stringify(d.scores));
+        if(d.caderno)localStorage.setItem(window.DMAE_KEY("cadernoerros"),JSON.stringify(d.caderno));
+        if(d.plano)localStorage.setItem(window.DMAE_KEY("plano"),JSON.stringify(d.plano));
+      }catch(e){}
+      if(window.renderDesempenho)window.renderDesempenho();
+      if(window.renderCaderno)window.renderCaderno();
+      if(window.renderProxima)window.renderProxima();
+      if(window.DMAE_planoApply)window.DMAE_planoApply();
+    } else {
+      /* sem linha na nuvem: sobe o que já existir localmente (migração) */
+      if(window.DMAE_syncPush)window.DMAE_syncPush(true);
+    }
+  }catch(e){}
+};
+(function(){
+  var t=null;
+  window.DMAE_syncPush=function(now){
+    if(!window.sb)return;
+    clearTimeout(t);
+    t=setTimeout(function(){
+      var uid="";try{uid=localStorage.getItem("dmae:uid")||"";}catch(e){}
+      if(!uid)return;
+      var scores=[],caderno=[],plano={};
+      try{scores=JSON.parse(localStorage.getItem(window.DMAE_KEY("scores"))||"[]");}catch(e){}
+      try{caderno=JSON.parse(localStorage.getItem(window.DMAE_KEY("cadernoerros"))||"[]");}catch(e){}
+      try{plano=JSON.parse(localStorage.getItem(window.DMAE_KEY("plano"))||"{}");}catch(e){}
+      window.sb.from("progress").upsert({user_id:uid,slug:(window.DMAE_SLUG||"dmae"),data:{scores:scores,caderno:caderno,plano:plano},updated_at:new Date().toISOString()},{onConflict:"user_id,slug"}).then(function(){},function(){});
+    }, now?0:900);
+  };
+})();
+</script>
+</body>
+</html>
