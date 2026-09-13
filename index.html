@@ -1404,7 +1404,13 @@ var FC=[
 ["Falsos cognatos","actually=na verdade; library=biblioteca; pretend=fingir; push=empurrar."],
 ["AFM/TAF","Avaliação física militar eliminatória - treine desde já."],
 ["Estratégia no dia","Todas as questões valem igual: não deixe nada em branco; eliminando 2, chute (50%)."],
-["Segurança pública (art. 144)","Dever do Estado, direito e responsabilidade de todos."]
+["Segurança pública (art. 144)","Dever do Estado, direito e responsabilidade de todos."],
+["Federação brasileira","União, Estados, DF e Municípios — todos autônomos."],
+["Direitos sociais (art. 6º)","Educação, saúde, trabalho, moradia, segurança, previdência..."],
+["Poderes (art. 2º)","Independentes e harmônicos entre si."],
+["Campo Geral — óculos","Miguilim passa a enxergar o mundo (descoberta)."],
+["Vidas Secas — Baleia","A cadela é humanizada; tema: a seca."],
+["Probabilidade","Favoráveis ÷ possíveis."]
 ];
 (function(){
   var box=document.getElementById("fcs"); if(!box||typeof FC==="undefined")return;
@@ -1762,6 +1768,30 @@ var FC=[
     {t:"“The library opens at 8.” — “library” =",o:["livraria.","biblioteca.","liberdade.","estante."],c:1,e:"Biblioteca."},
     {t:"“Push” numa porta significa:",o:["puxe.","empurre.","pare.","entre."],c:1,e:"Push=empurre; pull=puxe."},
     {t:"“My parents are teachers.” — “parents” =",o:["parentes.","pais (mãe e pai).","padrinhos.","primos."],c:1,e:"Parents = pais (falso cognato de 'parentes' = relatives)."}
+  ]},
+  {mat:"Língua Portuguesa",titulo:"Aula + treino: Interpretação de texto",aula:"Interpretar é entender o que o texto realmente diz. Cuidado com alternativas que: <b>ampliam</b> demais (“sempre”, “todos”), trazem <b>informação verdadeira mas ausente</b> do texto, ou <b>contradizem</b> o texto. A resposta certa está sempre <b>apoiada no texto</b>.",qs:[
+    {t:"A alternativa correta numa questão de interpretação é a que:",o:["traz uma opinião pessoal","está apoiada no texto","generaliza com “sempre”","contraria o texto"],c:1,e:"Ancora-se no texto."},
+    {t:"“Extrapolar” um texto significa:",o:["resumir corretamente","concluir só o que está escrito","ir além do que o texto diz (geralmente errado)","copiar o texto"],c:2,e:"Extrapolação vai além do texto — costuma ser a errada."},
+    {t:"A ideia central de um texto é:",o:["um detalhe secundário","o assunto principal que ele defende","sempre o primeiro período","um exemplo"],c:1,e:"É a tese/assunto principal."},
+    {t:"Numa charge, o humor costuma vir de:",o:["dados estatísticos","crítica e ironia sobre um fato","linguagem formal","ausência de contexto"],c:1,e:"Charge critica com ironia/humor."}
+  ]},
+  {mat:"Raciocínio Lógico-Matemático",titulo:"Aula + treino: Probabilidade e sequências",aula:"Probabilidade = <b>favoráveis ÷ possíveis</b>. Em sequências, procure o padrão: soma constante (PA) ou multiplicação constante (PG). Ex.: 2, 4, 8, 16 → cada termo dobra (PG de razão 2).",qs:[
+    {t:"Num dado honesto, a probabilidade de sair número par é:",o:["1/6","1/3","1/2","2/3"],c:2,e:"Pares {2,4,6} = 3/6 = 1/2."},
+    {t:"O próximo termo de 3, 6, 12, 24, ... é:",o:["30","36","48","40"],c:2,e:"PG de razão 2: 24×2=48."},
+    {t:"Numa PA de razão 5 começando em 2, o 4º termo é:",o:["15","17","20","12"],c:1,e:"a4 = 2 + (4−1)×5 = 17."},
+    {t:"A probabilidade de um evento impossível é:",o:["1","0,5","0","depende"],c:2,e:"Evento impossível = 0."}
+  ]},
+  {mat:"Noções de Direito e DH",titulo:"Aula + treino: Organização do Estado e direitos sociais",aula:"O Brasil é uma <b>federação</b>: União, Estados, Distrito Federal e Municípios, todos <b>autônomos</b>. Os <b>direitos sociais</b> (art. 6º) incluem educação, saúde, trabalho, moradia, segurança, previdência, entre outros. Os Poderes (Executivo, Legislativo, Judiciário) são <b>independentes e harmônicos</b>.",qs:[
+    {t:"Sobre a organização do Estado brasileiro, assinale a correta.",o:["Os municípios não têm autonomia.","União, Estados, DF e Municípios são entes autônomos.","O Brasil é um Estado unitário.","Só a União é autônoma."],c:1,e:"Federação: entes autônomos (art. 18)."},
+    {t:"São exemplos de direitos sociais (art. 6º):",o:["voto e elegibilidade","educação, saúde e moradia","propriedade e herança","nacionalidade"],c:1,e:"Art. 6º: educação, saúde, trabalho, moradia, segurança, previdência..."},
+    {t:"Os Poderes da União são:",o:["dependentes entre si","independentes e harmônicos","subordinados ao Executivo","apenas dois"],c:1,e:"Independentes e harmônicos (art. 2º)."},
+    {t:"A Polícia Militar, na segurança pública, faz:",o:["polícia judiciária","policiamento ostensivo e ordem pública","investigação de crimes federais","defesa das fronteiras"],c:1,e:"PM = ostensiva/ordem pública (art. 144)."}
+  ]},
+  {mat:"Literatura",titulo:"Aula + treino: Campo Geral e Vidas Secas (aprofundando)",aula:"<b>“Campo Geral”</b> (Guimarães Rosa): a infância de <b>Miguilim</b> no sertão, sua sensibilidade e o momento em que <b>ganha óculos e passa a enxergar o mundo</b> com nitidez — símbolo da descoberta. <b>“Vidas Secas”</b> (Graciliano Ramos): narrativa em capítulos quase independentes; a <b>cadela Baleia</b> tem até capítulo próprio; a linguagem é seca como o sertão; tema central: a <b>seca e a desumanização</b>.",qs:[
+    {t:"Em “Campo Geral”, ganhar óculos representa, para Miguilim:",o:["riqueza","a descoberta/enxergar melhor o mundo","a mudança para a cidade","o fim da infância triste"],c:1,e:"Momento simbólico: passa a enxergar o mundo."},
+    {t:"Em “Vidas Secas”, a cadela Baleia é importante porque:",o:["narra a história","é humanizada e tem destaque na obra","é a vilã","representa a cidade"],c:1,e:"Baleia é humanizada e tem até capítulo próprio."},
+    {t:"O tema central de “Vidas Secas” é:",o:["o amor romântico","a seca e a miséria no sertão","a vida na corte","a revolução industrial"],c:1,e:"Seca, miséria e desumanização."},
+    {t:"Os autores de “Campo Geral” e “Vidas Secas” são:",o:["ambos Graciliano Ramos","Guimarães Rosa e Graciliano Ramos","ambos Guimarães Rosa","Machado e Alencar"],c:1,e:"Guimarães Rosa e Graciliano Ramos."}
   ]}
 ];
 
